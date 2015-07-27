@@ -6,6 +6,9 @@ GitHub + Eclipse: A CS051 Proposal
 and [Eric C](mailto:eric.campbell@pomona.edu).*
 
 The sample assignment repositoy can be found [here](https://github.com/rwoll/GitHubEclipse).
+
+Additional reading on all the tools and processes explained, can be found at
+the bottom of the page.
 * * *
 
 ## The Proposal
