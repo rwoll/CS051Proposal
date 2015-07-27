@@ -31,6 +31,17 @@ and increase in quality for the grading and code distribution processes.
 
 ## Overview: Why Consider GitHub in CS051?
 
+In our internships this summer, we independently learned the valuable incremental
+version-controlled code-production pattern employed by software companies who wish
+to produce code with low technical debt. Looking back to our academic coding 
+experiences we noted that our coding techniques and those of our peers were more
+scatterbrained than methodical and incremental. Using a version control tool 
+in complicated classes like CS052 or CS105 would promote a more sustainable
+production experience, as it would allow an easy revert of a poorly thought-out
+attempt to solve a problem.  From a more personal standpoint, having learned git
+and its best-practices in school would have lowered some of the steep learning
+curve that we found at our internships.
+
 GitHub has become an industry-leader in cloud hosting code repositories and it
 has propelled the popularity of Git as one of the most commonly used
 distributed version control systems. With a large number of businesses and open
@@ -62,10 +73,10 @@ future iterations of the course. TAs will also be able to easily view other TAs
 grading strategies, promoting grading consistency across the department.
 
 While in its simplest form, GitHub could act as little more than a glorified
-online dropbox, there are so many features of Git and GitHub that could
+online dropbox, there are many features of Git and GitHub that could
 add greatly to the CS051 experience.
 
-## Git-ing Into It
+## *Git*-ing Into It
 
 The difficulty with integrating git version control into a classroom setting is
 leveling the learning curve.  We advocate the slow introduction of new git
