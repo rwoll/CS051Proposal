@@ -5,17 +5,29 @@ GitHub + Eclipse: A CS051 Proposal
 *This proposal has been compiled by [Ross W](mailto:ross.wollman@pomona.edu)
 and [Eric C](mailto:eric.campbell@pomona.edu).*
 
-The sample assignment repositoy can be found [here](https://github.com/rwoll/GitHubEclipse).
+The sample assignment repository can be found [here](https://github.com/rwoll/GitHubEclipse).
 
-Additional reading on all the tools and processes explained, can be found at
+Additional reading on all the tools and processes explained can be found at
 the bottom of the page.
 * * *
 
 ## The Proposal
 
-We propose an experimental CS051 Lab Section for Fall 2015 or Spring 2016 that
-will integrate GitHub and EGit to promote sustainable and easily-revisable
-code production, to the benefit of students, TAs, and professors.
+An experimental CS051 Lab Section for Fall 2015, with the end goal
+of adoption throughout all sections, that will integrate
+GitHub and EGit to promote sustainable and easily-revisable code 
+production that will benefit students, TAs, and professors. 
+
+Students will learn an industry standard versioning tool that promotes 
+incremental development and provides low-risk experimentation for more 
+efficient programming. TAs and Professors will have their workload 
+dramatically reduced, and grading will be held to a higher standard as
+specific comments will be visible by the CS051 grading team.
+
+A success in this experiment is defined by the incorporation of versioning
+into the students general coding practice, as well as a decrease in overhead 
+and increase in quality for the grading and code distribution processes.
+
 
 ## Overview: Why Consider GitHub in CS051?
 
@@ -28,9 +40,9 @@ that can be transferred to their personal projects, future classes,
 and careers.
 
 With editing and commenting from students, TAs, and professors captured online
-by GitHub, students will have a history, in the Pull Requests Tab, of their
-development over the course and will be better able to learn from their
-mistakes. There won’t be anymore emailing hard-to-follow student code PDF.
+by GitHub, students will have a history, in the Pull Requests tab, of their
+development throughout the semester. This improves the previous model of digging
+through email to find hard-to-follow PDFs.
 
 > **NOTE:** With the GitHub (Free) Education plan, all student code will be
   hosted in private locations. Only TAs, professors, and an individual student
