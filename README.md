@@ -5,17 +5,39 @@ GitHub + Eclipse: A CS051 Proposal
 *This proposal has been compiled by [Ross W](mailto:ross.wollman@pomona.edu)
 and [Eric C](mailto:eric.campbell@pomona.edu).*
 
-The sample assignment repositoy can be found [here](https://github.com/rwoll/GitHubEclipse).
+The sample assignment repository can be found [here](https://github.com/rwoll/GitHubEclipse).
 
-Additional reading on all the tools and processes explained, can be found at
+Additional reading on all the tools and processes explained can be found at
 the bottom of the page.
 * * *
 
 ## The Proposal
 
-We propose an experimental CS051 Lab Section for Fall 2015 or Spring 2016 that
-will integrate GitHub and EGit to promote sustainable and easily-revisable
-code production, to the benefit of students, TAs, and professors.
+Create and run an experimental CS051 Lab Section for Fall 2015, with 
+the end goal of adoption throughout all CS051 lab sections, that will 
+integrate GitHub and EGit to promote sustainable and easily-revisable 
+code production that will benefit students, TAs, and professors. 
+
+Students will learn an industry standard versioning tool that promotes 
+incremental development and provides low-risk experimentation for more 
+efficient programming. TAs and Professors will have their workload 
+dramatically reduced, and grading will be held to a higher standard as
+specific comments will be visible by the CS051 grading team.
+
+A success in this experiment is defined by the incorporation of versioning
+into the students general coding practice, as well as a decrease in overhead 
+and increase in quality for the grading and code distribution processes.
+
+## Personal Motivation
+
+In our internships this summer, we independently learned the valuable incremental
+version-controlled code-production pattern employed by software companies who 
+wish to produce code with low technical debt. We wish we had learned Git in school
+to help lower the steep learning curve that we found at our internships -- we 
+were expected to be competent. With the hope to minimize this speedbump for future
+students, and to help them to have more success in their computer science education
+we want to introduce this invaluable and ubiquitous tool into the CS051 lab 
+infrastructure.
 
 ## Overview: Why Consider GitHub in CS051?
 
@@ -28,9 +50,9 @@ that can be transferred to their personal projects, future classes,
 and careers.
 
 With editing and commenting from students, TAs, and professors captured online
-by GitHub, students will have a history, in the Pull Requests Tab, of their
-development over the course and will be better able to learn from their
-mistakes. There won’t be anymore emailing hard-to-follow student code PDF.
+by GitHub, students will have a history, in the Pull Requests tab, of their
+development throughout the semester. This improves the previous model of digging
+through email to find hard-to-follow PDFs.
 
 > **NOTE:** With the GitHub (Free) Education plan, all student code will be
   hosted in private locations. Only TAs, professors, and an individual student
@@ -50,10 +72,10 @@ future iterations of the course. TAs will also be able to easily view other TAs
 grading strategies, promoting grading consistency across the department.
 
 While in its simplest form, GitHub could act as little more than a glorified
-online dropbox, there are so many features of Git and GitHub that could
+online dropbox, there are many features of Git and GitHub that could
 add greatly to the CS051 experience.
 
-## Git-ing Into It
+## *Git*-ing Into It
 
 The difficulty with integrating git version control into a classroom setting is
 leveling the learning curve.  We advocate the slow introduction of new git
