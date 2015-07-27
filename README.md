@@ -49,8 +49,8 @@ classroom could help students learn invaluable versioned development skills
 that can be transferred to their personal projects, future classes,
 and careers.
 
-With editing and commenting from students, TAs, and professors captured online
-by GitHub, students will have a history, in the Pull Requests tab, of their
+With code edits and comments from students, TAs, and professors captured online
+by GitHub, course participants will have a history, in the Pull Requests tab, of their
 development throughout the semester. This improves the previous model of digging
 through email to find hard-to-follow PDFs.
 
@@ -85,7 +85,7 @@ GitHub, at this point, would simply act as a dropbox. For subsequent labs, we
 would suggest strategic checkpoints at which to `commit`. This fits in well
 with the incremental development employed by the current write-ups. Later, the
 idea of `branch`ing would be introduced to help encapsulate the development
-process and the functional additions to each `class`.
+process and the functional additions to each class.
 
 ## General Architecture
 
