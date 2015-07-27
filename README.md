@@ -13,10 +13,10 @@ the bottom of the page.
 
 ## The Proposal
 
-An experimental CS051 Lab Section for Fall 2015, with the end goal
-of adoption throughout all sections, that will integrate
-GitHub and EGit to promote sustainable and easily-revisable code 
-production that will benefit students, TAs, and professors. 
+Create and run an experimental CS051 Lab Section for Fall 2015, with 
+the end goal of adoption throughout all CS051 lab sections, that will 
+integrate GitHub and EGit to promote sustainable and easily-revisable 
+code production that will benefit students, TAs, and professors. 
 
 Students will learn an industry standard versioning tool that promotes 
 incremental development and provides low-risk experimentation for more 
@@ -28,19 +28,18 @@ A success in this experiment is defined by the incorporation of versioning
 into the students general coding practice, as well as a decrease in overhead 
 and increase in quality for the grading and code distribution processes.
 
-
-## Overview: Why Consider GitHub in CS051?
+## Personal Motivation
 
 In our internships this summer, we independently learned the valuable incremental
-version-controlled code-production pattern employed by software companies who wish
-to produce code with low technical debt. Looking back to our academic coding 
-experiences we noted that our coding techniques and those of our peers were more
-scatterbrained than methodical and incremental. Using a version control tool 
-in complicated classes like CS052 or CS105 would promote a more sustainable
-production experience, as it would allow an easy revert of a poorly thought-out
-attempt to solve a problem.  From a more personal standpoint, having learned git
-and its best-practices in school would have lowered some of the steep learning
-curve that we found at our internships.
+version-controlled code-production pattern employed by software companies who 
+wish to produce code with low technical debt. We wish we had learned Git in school
+to help lower the steep learning curve that we found at our internships -- we 
+were expected to be competent. With the hope to minimize this speedbump for future
+students, and to help them to have more success in their computer science education
+we want to introduce this invaluable and ubiquitous tool into the CS051 lab 
+infrastructure.
+
+## Overview: Why Consider GitHub in CS051?
 
 GitHub has become an industry-leader in cloud hosting code repositories and it
 has propelled the popularity of Git as one of the most commonly used
