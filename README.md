@@ -117,6 +117,34 @@ get their new lab assignment.  Given that the TA and professors do not push
 modifications of the previous lab assignments, this will go over without any
 merge conflicts.
 
+An example of the proposed starter code repository layout:
+
+```
+HOME
+├── README.md
+├── .gitignore
+│
+├── lab01
+│   ├── INSTRUCTIONS.MD
+│   ├── example.jar
+│   ├── bin
+│   └── source
+│
+├── lab02
+│   ├── INSTRUCTIONS.MD
+│   ├── example.jar
+│   ├── bin
+│   └── source
+.
+/
+.
+└── lab10
+    ├── INSTRUCTIONS.MD
+    ├── example.jar
+    ├── bin
+    └── source
+```
+
 #### The Students’ Code
 
 Once the Student has successfully run their `git pull upstream master` to get
