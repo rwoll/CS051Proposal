@@ -282,6 +282,28 @@ publish_lab () {
 
 ## Configuration
 #### Initial Setup: Sandboxing with GitHub for Education and `teachers_pet`
+To create the starter-code repository, push the locally-initalized repository of
+lab assignments (initially empty) to a new repository created in `PomonaCS051`
+GitHub orignization.  For the time being lets call this repository 
+`PomonaCS051/fa2014`.  Then, the students need to be added to the
+`PomonaCS051` organization.  Github allows you to control access permissions
+through their use of Teams.  So, add the students to a Team called "Students",
+and give them `pull`-only (i.e. read-only) access to `PomonaCS051/fa2014`.
+Then we need to create the student submission repositories, call them 
+`PomonaCS051/<studentname>_fa2014`.  Each such repository will be [sandboxed](https://education.github.com/guide/repository_setup#sandboxing),
+which creates a private repository for each student (i.e. students cannot see
+one anothers work). 
+
+To create the repositories, use the rubygem `teachers_pet`.  The `create_repos`
+command performs the following actions (taken directly from [Github's Site](https://education.github.com/guide/sandboxing#individual-projects)):
+
+For each student:
+  1. Create a repository in the organization based on the student's name.
+  2. Create a team in the organization, matching the name of the repository.
+  3. Set that team to have Push/Pull permissions.
+  4. Add the student to that team.
+  5. Give that team access to the corresponding repository.
+
 #### EGit Configuration For Professors
 #### EGit Configuration For Students
 #### EGit Configuration For TAs
