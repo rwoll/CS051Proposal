@@ -299,7 +299,7 @@ publish_lab () {
 + Promote the development of sustainable, version-controlled code
 + Possibility for more collaborative projects
 + Easy for TA to provide feedback on student code outside lab sessions or mentoring hours without having to post to Piazza
-+ Will reduced out Grade inflation
++ Will increase performance of the students in the later, more complex labs.
 + TAs are more accountable for their feedback because comments on code and grades are easily viewable by the grading team-- more quality feedback 
 + Professors will have a clearer picture at student coding progression throughout the semester 
 + Easily switch working between lab and personal computers
