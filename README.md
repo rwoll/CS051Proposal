@@ -187,7 +187,6 @@ the command `mr up` to pull from all registered remotes in any subdirectory).
 
 ## Questions to Consider
 
-+ What are the Pros and Cons of using GitHub and Git?
 + How setup the current lab folders to work with GitHub?
     + All that needs to be done, is to initialize a repository in the
       containing folder of the starter code, push it to the remote
