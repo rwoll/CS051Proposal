@@ -281,7 +281,7 @@ publish_lab () {
       and address it through Webhooks.
 
 ## Configuration
-#### Initial Setup: Sandboxing with GitHub for Education and `teachers_pet`
+### Initial Setup: Sandboxing with GitHub for Education and `teachers_pet`
 To create the starter-code repository, push the locally-initalized repository of
 lab assignments (initially empty) to a new repository created in `PomonaCS051`
 GitHub orignization.  For the time being lets call this repository 
@@ -304,8 +304,26 @@ For each student:
   4. Add the student to that team.
   5. Give that team access to the corresponding repository.
 
-#### EGit Configuration For Professors
-#### EGit Configuration For Students
+### EGit Configuration Options
+The following are some suggested `.gitconfig`s for the various groups involved.
+All of these options can be done in the ***Eclipse*** *>* ***Preferences*** *>* 
+***Team*** *>* ***Git*** *>* ***Configuration*** window.  Optionally, the student
+`.gitconfig` can be included in the starter-code repository.
+#### For Professors
+#### For Students
+To facilitate Eclipse terminal usage, students could define git `aliases` for the
+more complicated and confusing commands.  The following `[alias]` portion of the
+`.gitconfig` assumes that the `starter-code` remote points to the starter code
+repository `PomonaCS051/fa2015`, and the `submission` remote points to the students
+sandboxed repo `PomonaCS051/<studentname>_fa2015`.  
+```
+[alias]
+  starter-code = pull starter-code master
+  submit = push submission
+```
+This would make the student command for getting a new lab `git starter-code` and the
+student command for submitting their work `git submit lab09`.
+
 #### EGit Configuration For TAs
 
 
