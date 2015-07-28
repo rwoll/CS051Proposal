@@ -205,8 +205,10 @@ git add LabXX-LabName
 git commit -m “publish labXX”
 git push
 ```
-It would also be fairly straightforward to write a bash script to do this.
-Something like the untested script below:
+It would also be fairly straightforward to create a function in `.bash_profile`
+to do this. Something like the script below. It is to be run in the repository, 
+and expects the path to the lab directory as a parameter. It also assumes that 
+the `origin` remote is desired destination repository.
 
 ```bash
 publish_lab () {
@@ -214,8 +216,8 @@ publish_lab () {
     then
         echo “Parameter is of zero length”
     else
-        git add ($1)*
-            git commit -m “publish $1”
+        git add $1
+        git commit -m “publish $1”
         git push origin master
     fi
     return 0
