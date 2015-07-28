@@ -231,8 +231,9 @@ publish_lab () {
     + Once a repository is created using EGit, the bash Eclipse Terminal allows for
       manipulation of standard git commands. There is a choice to be made: GUI or 
       bash? We advocate the use of the Eclipse GUI for git, though some have
-      suggested that it confounds core git concepts. On the other hand, the
-      terminal is somewhat intimidating for beginning computer science students.
+      suggested that it confounds core git concepts, because it minimizes students 
+      accidentally executing unwanted or "unsafe" commands. Further, the
+      terminal is intimidating for beginning computer science students.
       In the face of these two options, we advocate the use of the EGit GUI as
       the primary method of git usage for the course, because it provides a 
       pleasant distinction between unstaged, staged, and commited files, that
