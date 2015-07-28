@@ -184,7 +184,6 @@ as `myrepos` and `git-town`,  will allow the TAs to easily update their cloned
 repos once they have been established. (for example `myrepos` simply requires
 the command `mr up` to pull from all registered remotes in any subdirectory).
 
-
 ## Questions to Consider
 
 + What are the Pros and Cons of using GitHub and Git?
@@ -280,6 +279,13 @@ publish_lab () {
       -- this would make it seem like they’ve handed in their lab earlier than
       reality. If this becomes a concern, there are strategies to detect
       and address it through Webhooks.
+
+## Configuration
+#### Initial Setup: Sandboxing with GitHub for Education and `teachers_pet`
+#### EGit Configuration For Professors
+#### EGit Configuration For Students
+#### EGit Configuration For TAs
+
 
 ## The Good, the Bad, and the Merge Conflict
 
