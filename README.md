@@ -42,17 +42,23 @@ infrastructure.
 ## Overview: Why Consider GitHub in CS051?
 
 GitHub has become an industry-leader in cloud hosting code repositories and it
-has propelled the popularity of Git as one of the most commonly used
+has propelled the popularity of Git as the de facto standard for
 distributed version control systems. With a large number of businesses and open
 source communities utilizing the tool, incorporating it into the CS051
 classroom could help students learn invaluable versioned development skills
 that can be transferred to their personal projects, future classes,
 and careers.
 
-With code edits and comments from students, TAs, and professors captured online
+Learning Git itself is a baseline skill for anyone working in the industry.
+Students who are well versed in git will have a leg up both during their internships,
+as well as once they leave college to continue on to graduate school or their careers.
+Its use also promotes a better coding practice, and would force students to
+complete their assignments in a incremental, feature-based manner.
+
+Further, with code edits and comments from students, TAs, and professors captured online
 by GitHub, course participants will have a history, in the Pull Requests tab, of their
-development throughout the semester. This improves the previous model of digging
-through email to find hard-to-follow PDFs.
+development throughout the semester. This is a significant improvement on the previous 
+model of digging through ancient emails to find hard-to-follow PDFs.
 
 > **NOTE:** With the GitHub (Free) Education plan, all student code will be
   hosted in private locations. Only TAs, professors, and an individual student
@@ -63,22 +69,25 @@ From a TA or Professor's perspective, using GitHub could help maximize the
 feedback students receive on their code by reducing the number of steps
 in the grading process. It would simplify the collection of student projects
 and facilitate the dissemination of feedback. Professors and TAs will also have
-a more transparent view of student progression and TA feedback.
+a more transparent view of student progression and TA feedback, promoting grading 
+consistency across the department.
 
 Another advantage of GitHub in the development of this new course material is
-as a resource for TAs and Professors. Students and TAs can submit Pull Requests
-with suggestions and changes to the git instructions that may be included for
-future iterations of the course. TAs will also be able to easily view other TAs
-grading strategies, promoting grading consistency across the department.
+as a resource for TAs and Professors. The professors will be able to version 
+control the iterations of the course, simply creating a new fork of the 
+repository for each semester. This would create a complete record of previous 
+versions of the course and allow for simple, collaborative modifications, as 
+changes are made to the course into the future.
 
 While in its simplest form, GitHub could act as little more than a glorified
-online dropbox, there are many features of Git and GitHub that could
+online dropbox that allows for more efficient distribution and collection of
+assignments, there are many other features of Git and GitHub that could
 add greatly to the CS051 experience.
 
 ## *Git*-ing Into It
 
 The difficulty with integrating git version control into a classroom setting is
-leveling the learning curve.  We advocate the slow introduction of new git
+leveling the learning curve. We advocate the slow introduction of new git
 strategies as the course progresses.  In the first lab, students would be
 limited to simply `pull`ing, `commit`ting, and `push`ing their changes;
 GitHub, at this point, would simply act as a dropbox. For subsequent labs, we
@@ -340,6 +349,16 @@ awarded accordingly (though the additional skill set brought to them by this
 program should be reward enough!)
 
 #### Other applications of GitHub for PO-CS
+Once students and familiar with the use of Git, they will be able to use it to
+share resources and collaborate to promote knowledge of industry. A possible
+example would be a Liasons-managed GitHub Respository that would contain cool
+scripts, funny ~/.bash_profiles, tough interview questions, and other student 
+resources.
+
+#### Another side benefit
+For the development of *this* project, students, TAs, and professors can submit
+Pull Requests with suggestions and changes to the git instructions that may be 
+included for future iterations of the course.
 
 ## *Git*-ing on with it: Next Steps:
 
