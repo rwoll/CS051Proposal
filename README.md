@@ -320,10 +320,25 @@ publish_lab () {
 
 ## Branching Ideas: Related Thoughts
 
-A couple of thoughts that we had, since this would only serve as an
-introduction to Git, were to award extra credit points to students for
-exceptional commit histories, or to make git usage a half or full point part
-of the rubric to be taken away only in extreme circumstances of misuse.  
+#### Grading
+There are a few options regarding grading for the usage of git in the lab.
+They are as follows:
+  1. Git use would be in integral part of the grade, to be taken away from
+      design or style, only to be deducted in cases of severe misuse (all in
+      one commit, or 100 infinitesimal commits)
+  2. Git use would be an additional point in the lab rubric.  So labs that were
+      previously worth 10 points, would now be worth 11, with an additional
+      point only to be deducted in cases of severe misuse (as above)
+  3. Git use would not be a standard part of the lab rubric, but an additional
+      extra credit point would be awarded for exceptional use (and would be 
+      not given only in cases of extreme misuse).
+
+We advocate option 2 or 3 for the experimental section, as git will provide 
+an additional challenge for the students in this lab, and they should be 
+awarded accordingly (though the additional skill set brought to them by this
+program should be reward enough!)
+
+####
 
 ## References and Further Reading
 
