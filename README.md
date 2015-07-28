@@ -338,7 +338,9 @@ an additional challenge for the students in this lab, and they should be
 awarded accordingly (though the additional skill set brought to them by this
 program should be reward enough!)
 
-####
+#### Other applications of GitHub for PO-CS
+
+## Next Steps: 
 
 ## References and Further Reading
 
