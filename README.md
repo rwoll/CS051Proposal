@@ -188,8 +188,8 @@ the command `mr up` to pull from all registered remotes in any subdirectory).
 ## Questions to Consider
 
 + How setup the current lab folders to work with GitHub?
-    + All that needs to be done, is to initialize a repository in the
-      containing folder of the starter code, push it to the remote
+    + All that needs to be done, is to initialize a repository, using Git or
+      EGit, in the containing folder of the starter code, push it to the remote
       `PomonaCollege/cs051-FA201X` educational branch. When the starter code
       for each lab is to be published, the following commands will be run: 
 ```
@@ -198,7 +198,7 @@ git commit -m “publish labXX”
 git push
 ```
 It would also be fairly straightforward to write a bash script to do this.
-Something like the untested and script below:
+Something like the untested script below:
 
 ```bash
 publish_lab () {
@@ -214,12 +214,20 @@ publish_lab () {
 }
 ```
 
-
 + How do Eclipse and Git Work together?
     + Through EGit, Eclipse can be setup to work smoothly with Git
       repositories. This plugin is helpful because it manages the complexly
       linked workspaces created by Eclipse. Creating repositories without its
       help is a bit more involved.
+    + Once a repository is created using EGit, the bash Eclipse Terminal allows for
+      manipulation of standard git commands. There is a choice to be made: GUI or 
+      bash? We advocate the use of the Eclipse GUI for git, though some have
+      suggested that it confounds core git concepts. On the other hand, the
+      terminal is somewhat intimidating for beginning computer science students.
+      In the face of these two options, we advocate the use of the EGit GUI as
+      the primary method of git usage for the course, because it provides a 
+      pleasant distinction between unstaged, staged, and commited files, that
+      is much more difficult to understand in the bash terminal.
 + What would the grading/feedback workflow look like?
     + Link to anchor in document.
 + Current Workflow
