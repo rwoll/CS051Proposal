@@ -332,6 +332,8 @@ They are as follows:
   3. Git use would not be a standard part of the lab rubric, but an additional
       extra credit point would be awarded for exceptional use (and would be 
       not given only in cases of extreme misuse).
+  4. Git use is excluded entirely from the grading, and no points -- standard 
+      or extra credit -- would be awarded or deducted.
 
 We advocate option 2 or 3 for the experimental section, as git will provide 
 an additional challenge for the students in this lab, and they should be 
@@ -340,7 +342,7 @@ program should be reward enough!)
 
 #### Other applications of GitHub for PO-CS
 
-## Next Steps: 
+## *Git*-ing on with it: Next Steps:
 
 ## References and Further Reading
 
