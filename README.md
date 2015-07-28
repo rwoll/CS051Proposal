@@ -316,7 +316,60 @@ publish_lab () {
 A couple of thoughts that we had, since this would only serve as an
 introduction to Git, were to award extra credit points to students for
 exceptional commit histories, or to make git usage a half or full point part
-of the rubric to be taken away only in extreme circumstances of misuse.  
+of the rubric to be taken away only in extreme circumstances of misuse.
+
+## Case Studies
+
+### School of Engineering and Design, Institute of Technology (Ireland)
+
+#### Motivation
+
+> "Additionally, within the classroom, there is increasing  pressure on contact
+  time with students prompting a refocus on more efficient means of
+  communication from lecturer [or TA] to student - and from student to lecturer
+  [or TA]. In parallel, a move towards the ‘flipped model’ of student learning
+  benefits from a quick, efficient mechanism to round-trip student and lecturer
+  exercises back and forth."
+> *- John Kelleher*
+
+#### Academic Honesty
+
+> "The issue of substantiating any allegation of plagiarism is fraught. Ideally
+  an interview will secure evidence of plagiarism  but may not be practicable
+  or cost-effective. However, when work completed by the student is regularly
+  pushed to the hosting service, the activity is clearly visualised. Indeed,
+  the sudden appearance of an established solution as a single commit served
+  to draw attention to the submission, effectively acting as a
+  plagiarism alert."
+> *- John Kelleher*
+
+#### Drawbacks of GUIs
+
+> "The GUI tools held much promise but were not well received. From feedback
+  from students, it appeared that though visually attractive, the range of
+  features served to their confound their nascent understanding."
+> *- John Kelleher*
+
+### Iowa State University: Principles of Programming Languages Course
+
+#### Distributing Assignments
+
+> "Releasing new homeworks was dead simple. One of the TA’s or the instructor
+  would just add a new folder containing the homework files to the main repo."
+> *- Josh Davis*
+
+#### Resolving Issues 
+
+> "The great thing is that while the questions were plentiful during Homework
+  0, by the time of the first real homework a small percentage of students
+  still had issues."
+> *- Josh Davis*
+
+#### Overall Thoughts
+
+> "If I had to be a TA again, I would pick to use GitHub in a heartbeat. It
+  saved us a ton of time in not only releasing homeworks but grading them."
+> *- Josh Davis*
 
 ## References and Further Reading
 
