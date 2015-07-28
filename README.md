@@ -198,10 +198,10 @@ git add LabXX-LabName
 git commit -m “publish labXX”
 git push
 ```
-It would also be fairly straightforward to write a bash script to do this.
-Something like the script below. It is to be run in the directory containing
-the lab directory, and expects the lab directory as a parameter. It also
-assumes that the `origin` remote is desired destination repository
+It would also be fairly straightforward to create a function in `.bash_profile`
+to do this. Something like the script below. It is to be run in the repository, 
+and expects the path to the lab directory as a parameter. It also assumes that 
+the `origin` remote is desired destination repository.
 
 ```bash
 publish_lab () {
