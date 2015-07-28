@@ -247,8 +247,7 @@ publish_lab () {
         the rubric.
     11. TA emails the commented PDF and grade file to each student.
     12. Adds grade to a Google Spreadsheet.
-+ Possible Workflow? (*This is a suggestion! There are many possible
-  implementations of this model.*)
++ Proposed Workflow
     1. Professor pushes Eclipse project (with Readme instructions and working
        example`.jar` file) to the `upstream` GitHub repo.
     2. Student clones repository and creates a new branch called `labXX`
