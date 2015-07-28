@@ -361,7 +361,39 @@ For the development of *this* project, students, TAs, and professors can submit
 Pull Requests with suggestions and changes to the git instructions that may be 
 included for future iterations of the course.
 
-## *Git*-ing on with it: Next Steps:
+#### Unit Tests and Continuous Integration
+One aspect that might be useful for students and TAs that could be incorporated 
+in the future is Continuous Integration, or running a unit and integration 
+test suite as soon as the code is pushed. This is done using GitHubs WebHooks 
+capability. This would only be used in future iterations of the course.
+
+## *Git*-ing on with it: Next Steps
+  1. Create a Pomona College Github Organization and Sign up for [GitHub for Education](https://education.github.com/discount_requests/new) ASAP. 
+      Approval takes up to 2 weeks.
+  2. Configure Lab Computers. If the current version of Eclipse installed
+       on the Lab computers does not have the EGit plugin, either
+    1. download a 
+        [version that  does](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/marsr).
+    2. Add the EGit plugin to existing installations of Eclipse
+    3. Use the older version JGit, which may have shipped with the 
+        current version of Eclispe
+    4. Do nothing, and we can walk the students through the EGit installation
+        during their first lab period.
+  3. Send the first few laboratory assignments to Ross and Eric so they can 
+      convert them to GitHub-ready assignments. This involves 
+    1. creating the repository
+    2. converting the current write-ups from HTML to Markdown.
+    3. adding the `.jar` file either to the existing repository or as a 
+      [GitHub Page](https://pages.github.com/)
+  4. Once the Github for Education is approved, create a `cs051-fa2015` repository
+      belonging to the Pomona College organization, and push the first lab.
+  5. On (or prior to) the first day of lab, students will need to sign up for GitHub
+      and communicate their handles to the TAs. Then we will be able to use 
+      `teachers_pet` to create their repos.
+
+> The only tasks that need to be done by the department would be the native installation
+of the EGit plugin to Eclipse (2.i-iii), and sending the first few labs (3).
+The rest can be done by Eric and Ross.
 
 ## References and Further Reading
 
