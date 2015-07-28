@@ -193,7 +193,6 @@ as `myrepos` and `git-town`,  will allow the TAs to easily update their cloned
 repos once they have been established. (for example `myrepos` simply requires
 the command `mr up` to pull from all registered remotes in any subdirectory).
 
-
 ## Questions to Consider
 
 + How setup the current lab folders to work with GitHub?
@@ -296,6 +295,53 @@ publish_lab () {
       -- this would make it seem like they’ve handed in their lab earlier than
       reality. If this becomes a concern, there are strategies to detect
       and address it through Webhooks.
+
+## Configuration
+### Initial Setup: Sandboxing with GitHub for Education and `teachers_pet`
+To create the starter-code repository, push the locally-initalized repository of
+lab assignments (initially empty) to a new repository created in `PomonaCS051`
+GitHub orignization.  For the time being lets call this repository 
+`PomonaCS051/fa2014`.  Then, the students need to be added to the
+`PomonaCS051` organization.  Github allows you to control access permissions
+through their use of Teams.  So, add the students to a Team called "Students",
+and give them `pull`-only (i.e. read-only) access to `PomonaCS051/fa2014`.
+Then we need to create the student submission repositories, call them 
+`PomonaCS051/<studentname>_fa2014`.  Each such repository will be [sandboxed](https://education.github.com/guide/repository_setup#sandboxing),
+which creates a private repository for each student (i.e. students cannot see
+one anothers work). 
+
+To create the repositories, use the rubygem `teachers_pet`.  The `create_repos`
+command performs the following actions (taken directly from [Github's Site](https://education.github.com/guide/sandboxing#individual-projects)):
+
+For each student:
+  1. Create a repository in the organization based on the student's name.
+  2. Create a team in the organization, matching the name of the repository.
+  3. Set that team to have Push/Pull permissions.
+  4. Add the student to that team.
+  5. Give that team access to the corresponding repository.
+
+### EGit Configuration Options
+The following are some suggested `.gitconfig`s for the various groups involved.
+All of these options can be done in the ***Eclipse*** *>* ***Preferences*** *>* 
+***Team*** *>* ***Git*** *>* ***Configuration*** window.  Optionally, the student
+`.gitconfig` can be included in the starter-code repository.
+#### For Professors
+#### For Students
+To facilitate Eclipse terminal usage, students could define git `aliases` for the
+more complicated and confusing commands.  The following `[alias]` portion of the
+`.gitconfig` assumes that the `starter-code` remote points to the starter code
+repository `PomonaCS051/fa2015`, and the `submission` remote points to the students
+sandboxed repo `PomonaCS051/<studentname>_fa2015`.  
+```
+[alias]
+  starter-code = pull starter-code master
+  submit = push submission
+```
+This would make the student command for getting a new lab `git starter-code` and the
+student command for submitting their work `git submit lab09`.
+
+#### EGit Configuration For TAs
+
 
 ## The Good, the Bad, and the Merge Conflict
 
