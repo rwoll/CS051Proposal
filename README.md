@@ -32,12 +32,9 @@ and increase in quality for the grading and code distribution processes.
 
 In our internships this summer, we independently learned the valuable incremental
 version-controlled code-production pattern employed by software companies who 
-wish to produce code with low technical debt. We wish we had learned Git in school
-to help lower the steep learning curve that we found at our internships -- we 
-were expected to be competent. With the hope to minimize this speedbump for future
-students, and to help them to have more success in their computer science education
-we want to introduce this invaluable and ubiquitous tool into the CS051 lab 
-infrastructure.
+wish to produce code with low technical debt. We hope to expose students to Git
+to optimize the overall lab workflow and create a base knowledge of an invaluable
+and ubiquitous tool.
 
 ## Overview: Why Consider GitHub in CS051?
 
@@ -49,7 +46,6 @@ classroom could help students learn invaluable versioned development skills
 that can be transferred to their personal projects, future classes,
 and careers.
 
-Learning Git itself is a baseline skill for anyone working in the industry.
 Students who are well versed in git will have a leg up both during their internships,
 as well as once they leave college to continue on to graduate school or their careers.
 Its use also promotes a better coding practice, and would force students to
@@ -61,9 +57,9 @@ development throughout the semester. This is a significant improvement on the pr
 model of digging through ancient emails to find hard-to-follow PDFs.
 
 > **NOTE:** With the GitHub (Free) Education plan, all student code will be
-  hosted in private locations. Only TAs, professors, and an individual student
-  will have access to viewing/editing their repositories.
-  They will **NOT** be publicly visible.
+> hosted in private locations. Only TAs, professors, and an individual student
+> will have access to viewing/editing their repositories.
+> They will **NOT** be publicly visible.
 
 From a TA or Professor's perspective, using GitHub could help maximize the
 feedback students receive on their code by reducing the number of steps
@@ -74,7 +70,7 @@ consistency across the department.
 
 Another advantage of GitHub in the development of this new course material is
 as a resource for TAs and Professors. The professors will be able to version 
-control the iterations of the course, simply creating a new fork of the 
+control the iterations of the labs--simply creating a new fork of the 
 repository for each semester. This would create a complete record of previous 
 versions of the course and allow for simple, collaborative modifications, as 
 changes are made to the course into the future.
@@ -82,7 +78,7 @@ changes are made to the course into the future.
 While in its simplest form, GitHub could act as little more than a glorified
 online dropbox that allows for more efficient distribution and collection of
 assignments, there are many other features of Git and GitHub that could
-add greatly to the CS051 experience.
+add greatly to the CS051 workflow.
 
 ## *Git*-ing Into It
 
@@ -91,24 +87,33 @@ leveling the learning curve. We advocate the slow introduction of new git
 strategies as the course progresses.  In the first lab, students would be
 limited to simply `pull`ing, `commit`ting, and `push`ing their changes;
 GitHub, at this point, would simply act as a dropbox. For subsequent labs, we
-would suggest strategic checkpoints at which to `commit`. This fits in well
-with the incremental development employed by the current write-ups. Later, the
-idea of `branch`ing would be introduced to help encapsulate the development
-process and the functional additions to each class.
+would suggest strategic checkpoints at which to `commit` in the instructions.
+This fits in well with the incremental development employed by the current write-ups.
+Later, the idea of `branch`ing would be introduced to help encapsulate the development
+process and the functional additions to each java class.
 
 ## General Architecture
 
-There are four main pieces to this new, proposed architecture, the starter
+There are four main pieces to this proposed architecture, the starter
 code, the student’s code, the student’s submission, and the TA’s grading
 repositories. 
 
-> N.B. All of the commands in this assignment can be performed using the EGit
-  GUI interface. They are included as terminal commands below for ease of
-  readability.
+> **NOTE:** All of the commands in this assignment can be performed using the EGit
+> GUI interface. They are included as terminal commands below for ease of
+> readability.
 
 * * *
 ![ArchitecureImage](/architecture_v.png)
 * * *
+
+> **Continued Use Workflow**
+> 1. Professor `push`es new labs to a master repository (`pull`-only for students).
+> 2. Students `pull` the lab into their local repository (and with it, into Eclipse).
+> 3. Each student `push`es their lab to their private GitHub sandboxed repository.
+> 4. The TA grading the section, (with a scripted command) `pulls` all the student changes
+   in one command to their computer which has been configured to automatically
+   show up in Eclipse at the start of the year.
+   TA compiles each students code and leaves feedback directly through GitHub.
 
 #### The Starter Code
 
@@ -119,9 +124,10 @@ will contain a github-markdown `INSTRUCTIONS.md` file. The lab write-up can be
 ported directly to this `INSTRUCTIONS.md` file with the lab write-up mostly
 unchanged from its current state (The instructions will need to be modified to
 contain git-related instructions.) This `labXX` file will also need to contain
-a `example.jar` file that contains the fully-functional working example of the
+an `example.jar` file that contains the fully-functional working example of the
 lab. (Another option would be to embed the `example.jar` file into a
-GitHub-Pages website.) Students will then do a `git pull upstream master` to
+GitHub-Pages website or have it on the current CS Department website)
+Students will then do a `git pull upstream master` to
 get their new lab assignment.  Given that the TA and professors do not push
 modifications of the previous lab assignments, this will go over without any
 merge conflicts.
@@ -129,7 +135,7 @@ merge conflicts.
 An example of the proposed starter code repository layout:
 
 ```
-HOME
+PomonaCollege/fa2015
 ├── README.md
 ├── .gitignore
 │
@@ -177,7 +183,8 @@ create a [pull request](https://help.github.com/articles/using-pull-requests/)
 The TA will then pull the new branch for each student down from `master`, and
 the Eclipse Git Client then allows for easier import of repositories into the
 workspace -- no more dragging and dropping (and overwriting) student source
-folders; simply click on the repo in the EGit client and import. 
+folders; simply click on the repo in the EGit client and complete the
+one-click import. 
 
 The TA can then run the code in Eclipse and grade the functionality. This grade
 will then be left in a comment on the PR submitted by the student. The TA can
@@ -195,7 +202,7 @@ the command `mr up` to pull from all registered remotes in any subdirectory).
 
 ## Questions to Consider
 
-+ How setup the current lab folders to work with GitHub?
++ How would the current lab folders be modified to work with GitHub?
     + All that needs to be done, is to initialize a repository, using Git or
       EGit, in the containing folder of the starter code, push it to the remote
       `PomonaCollege/cs051-FA201X` educational branch. When the starter code
@@ -228,7 +235,9 @@ publish_lab () {
     + Through EGit, Eclipse can be setup to work smoothly with Git
       repositories. This plugin is helpful because it manages the complexly
       linked workspaces created by Eclipse. Creating repositories without its
-      help is a bit more involved.
+      help is a bit more involved. **After it is set up during the first lab,
+      students will simply have to do one instruction to acquire and import the
+      lab into their workspace and working directory.**
     + Once a repository is created using EGit, the bash Eclipse Terminal allows for
       manipulation of standard git commands. There is a choice to be made: GUI or 
       bash? We advocate the use of the Eclipse GUI for git, though some have
@@ -238,39 +247,41 @@ publish_lab () {
       In the face of these two options, we advocate the use of the EGit GUI as
       the primary method of git usage for the course, because it provides a 
       pleasant distinction between unstaged, staged, and commited files, that
-      is much more difficult to understand in the bash terminal.
+      is much more difficult to understand in the bash terminal. It will also
+      reduce the amount of time needed to talk about Git keeping the focus on
+      the concepts discussed in lecture and the actual CS051 curriculum.
 + What would the grading/feedback workflow look like?
-    + Link to anchor in document.
-+ Current Workflow
-    1. Professor uploads Html Writeup to server.
-    2. Professor adds Eclipse starter code to permissions-controlled dropbox
-    3. Students drag-and-drop the starter code to their workspace
-    4. Students import the project to Eclipse
-    5. Save File, Export file [with proper naming convention], drag-and-drop
-       back to dropbox
-    6. TA opens the dropbox, to drag-and-drop each student directory into their
-       home directory.
-    7. Export each project into Eclipse to run it.
-    8. TA copy-and-pastes each student’s code into a text document to be
-       converted into a PDF for commenting (or uses existing script).
-    9. TA creates a rubric `.txt` file as a baseline for each student’s lab.
-    10. TA adds comments to each students PDF on specific lines of code and adds
-        the rubric.
-    11. TA emails the commented PDF and grade file to each student.
-    12. Adds grade to a Google Spreadsheet.
-+ Proposed Workflow
-    1. Professor pushes Eclipse project (with Readme instructions and working
+    + **Proposed Workflow**
+        1. Professor pushes Eclipse project (with Readme instructions and working
        example`.jar` file) to the `upstream` GitHub repo.
-    2. Student clones repository and creates a new branch called `labXX`
-    3. Student adds, commits, and pushes their completed assignment to
+        2. Student `pull`s the updated repository and creates a new branch called `labXX`
+        3. Student adds, commits, and pushes their completed assignment to
        `origin/labXX`
-    4. Student creates a Pull Request.
-    5. TA clones repos with [`teachers_pet`](1) (first time only, subsequent
+        4. Student creates a Pull Request.
+        5. TA clones repos with [`teachers_pet`](1) (first time only, subsequent
        assignments would be retrieved using git maintenance software such as
        [`myrepos`](https://myrepos.branchable.com/) )
-    8. TA provides inline comments on the pull request and a grade in the final
+       6. TA provides inline comments on the pull request and a grade in the final
        comment of the PR.  Once it has been graded the TA merges the PR and
        records the grade in the grade book. 
+    + Current Workflow
+        1. Professor uploads Html Writeup to server.
+        2. Professor adds Eclipse starter code to permissions-controlled dropbox
+        3. Students drag-and-drop the starter code to their workspace
+        4. Students import the project to Eclipse
+        5. Save File, Export file [with proper naming convention], drag-and-drop
+           back to dropbox
+        6. TA opens the dropbox, to drag-and-drop each student directory into their
+           home directory.
+        7. Export each project into Eclipse to run it.
+        8. TA copy-and-pastes each student’s code into a text document to be
+           converted into a PDF for commenting (or uses existing script).
+        9. TA creates a rubric `.txt` file as a baseline for each student’s lab.
+        10. TA adds comments to each students PDF on specific lines of code and adds
+            the rubric.
+        11. TA emails the commented PDF and grade file to each student.
+        12. Adds grade to a Google Spreadsheet.
+
 
 + What software needs to be installed on the lab computers?
     + [Eclipse with the EGit plugin](http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/marsr)
@@ -282,7 +293,7 @@ publish_lab () {
 
 + What could go wrong?
     + Merge conflicts could be difficult to resolve if encountered by students
-      -- TAs would have to be versed in Git to resolve the conflicts. However,
+      -- TAs would have to be trained in Git to resolve the conflicts. However,
       the strategy of separating assignments into different directories within
       the main repository will minimize merge conflicts to any of the master
       branches. They would only cause difficulty in poorly-executed version-
@@ -293,12 +304,12 @@ publish_lab () {
       create a branch, commit to it, switch back to the assignment branch,
       commit to that, and then try and merge.
     + Students could theoretically tamper with the GitHub API and alter pull
-      request and commit timestamps through an elaborate command line process
-      -- this would make it seem like they’ve handed in their lab earlier than
-      reality. If this becomes a concern, there are strategies to detect
+      request and commit timestamps through an elaborate command line process.
+      If this becomes a concern, there are strategies to detect
       and address it through Webhooks.
 
 ## Configuration
+
 ### Initial Setup: Sandboxing with GitHub for Education and `teachers_pet`
 To create the starter-code repository, push the locally-initalized repository of
 lab assignments (initially empty) to a new repository created in `PomonaCS051`
@@ -365,6 +376,8 @@ student command for submitting their work `git submit lab09`.
 + Easy ability to revert to older versions of code -- no more overwriting test programs hours before they are due!
 + Low-risk refactoring and experimentation (e.g. 0 index vs. 1 index)
 + Existing GUI tools allow for the avoidance of intimidating command-line use.
++ Simplified process for students to get projects in and out of Eclipse (after 
+  the initial setup)
 
 ### Cons
 
@@ -374,6 +387,8 @@ student command for submitting their work `git submit lab09`.
 + Merge conflicts 
 + The first lab would require additional setup for the students
 + Configuration of remotes (for the first lab setup) could be confusing.
++ Git could distract from the core CS51 curriculumn if instructions surrounding
+  its usage is unclear
 
 ## Case Studies
 
@@ -436,8 +451,7 @@ exceptional commit histories, or to make git usage a half or full point part
 of the rubric to be taken away only in extreme circumstances of misuse.
 
 #### Grading
-There are a few options regarding grading for the usage of git in the lab.
-They are as follows:
+A few ideas regarding possible grading scenarios:
   1. Git use would be in integral part of the grade, to be taken away from
       design or style, only to be deducted in cases of severe misuse (all in
       one commit, or 100 infinitesimal commits)
@@ -449,11 +463,6 @@ They are as follows:
       not given only in cases of extreme misuse).
   4. Git use is excluded entirely from the grading, and no points -- standard 
       or extra credit -- would be awarded or deducted.
-
-We advocate option 2 or 3 for the experimental section, as git will provide 
-an additional challenge for the students in this lab, and they should be 
-awarded accordingly (though the additional skill set brought to them by this
-program should be reward enough!)
 
 #### Other applications of GitHub for PO-CS
 Once students and familiar with the use of Git, they will be able to use it to
@@ -473,13 +482,18 @@ in the future is Continuous Integration, or running a unit and integration
 test suite as soon as the code is pushed. This is done using GitHubs WebHooks 
 capability. This would only be used in future iterations of the course.
 
+#### Revert, Revert, Revert
+If the propsosed changes were to be implemented and then later found to be a
+hinderence, the lab section could revert to the standard instructions and workflow.
+TAs could move the cloned repositories and student code to the PO network.
+
 ## *Git*-ing on with it: Next Steps
   1. Create a Pomona College Github Organization and Sign up for [GitHub for Education](https://education.github.com/discount_requests/new) ASAP. 
-      Approval takes up to 2 weeks.
+      Approval takes 1-2 weeks.
   2. Configure Lab Computers. If the current version of Eclipse installed
        on the Lab computers does not have the EGit plugin, either
     1. download a 
-        [version that  does](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/marsr).
+        [version that does](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/marsr).
     2. Add the EGit plugin to existing installations of Eclipse
     3. Use the older version JGit, which may have shipped with the 
         current version of Eclispe
@@ -495,11 +509,12 @@ capability. This would only be used in future iterations of the course.
       belonging to the Pomona College organization, and push the first lab.
   5. On (or prior to) the first day of lab, students will need to sign up for GitHub
       and communicate their handles to the TAs. Then we will be able to use 
-      `teachers_pet` to create their repos.
+      `teachers_pet` to create their privately sandboxed repos that they can
+       use on the first day of lab.
 
 > The only tasks that need to be done by the department would be the native installation
-of the EGit plugin to Eclipse (2.i-iii), and sending the first few labs (3).
-The rest can be done by Eric and Ross.
+of the EGit plugin to Eclipse (2.i-iii), and sending the first few labs (3). Eric and Ross
+can do the intial setup and document the process for possible future use.
 
 ## References and Further Reading
 
