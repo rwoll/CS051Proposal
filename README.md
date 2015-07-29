@@ -112,7 +112,7 @@ repositories.
 4. The TA grading the section, (with a scripted command) `pulls` all the student changes
    in one command to their computer which has been configured to automatically
    show up in Eclipse at the start of the year.
-5. TA compiles each students code and leaves feedback directly through GitHub.
+   TA compiles each students code and leaves feedback directly through GitHub.
 
 #### The Starter Code
 
@@ -134,7 +134,7 @@ merge conflicts.
 An example of the proposed starter code repository layout:
 
 ```
-PomonaCollege/cs-051
+PomonaCollege/fa2015
 ├── README.md
 ├── .gitignore
 │
@@ -183,7 +183,7 @@ The TA will then pull the new branch for each student down from `master`, and
 the Eclipse Git Client then allows for easier import of repositories into the
 workspace -- no more dragging and dropping (and overwriting) student source
 folders; simply click on the repo in the EGit client and complete the
-one-clickimport. 
+one-click import. 
 
 The TA can then run the code in Eclipse and grade the functionality. This grade
 will then be left in a comment on the PR submitted by the student. The TA can
