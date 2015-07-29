@@ -106,10 +106,11 @@ repositories.
 ![ArchitecureImage](/architecture_v.png)
 * * *
 
-1. Professor `push`es new labs to a master repository (`pull`-only for students).
-2. Students `pull` the lab into their local repository (and with it, into Eclipse).
-3. Each student `push`es their lab to their private GitHub sandboxed repository.
-4. The TA grading the section, (with a scripted command) `pulls` all the student changes
+> **Continued Use Workflow**
+> 1. Professor `push`es new labs to a master repository (`pull`-only for students).
+> 2. Students `pull` the lab into their local repository (and with it, into Eclipse).
+> 3. Each student `push`es their lab to their private GitHub sandboxed repository.
+> 4. The TA grading the section, (with a scripted command) `pulls` all the student changes
    in one command to their computer which has been configured to automatically
    show up in Eclipse at the start of the year.
    TA compiles each students code and leaves feedback directly through GitHub.
@@ -201,7 +202,7 @@ the command `mr up` to pull from all registered remotes in any subdirectory).
 
 ## Questions to Consider
 
-+ How setup the current lab folders to work with GitHub?
++ How would the current lab folders be modified to work with GitHub?
     + All that needs to be done, is to initialize a repository, using Git or
       EGit, in the containing folder of the starter code, push it to the remote
       `PomonaCollege/cs051-FA201X` educational branch. When the starter code
@@ -250,37 +251,37 @@ publish_lab () {
       reduce the amount of time needed to talk about Git keeping the focus on
       the concepts discussed in lecture and the actual CS051 curriculum.
 + What would the grading/feedback workflow look like?
-    + [See below.](a)
-+ Current Workflow
-    1. Professor uploads Html Writeup to server.
-    2. Professor adds Eclipse starter code to permissions-controlled dropbox
-    3. Students drag-and-drop the starter code to their workspace
-    4. Students import the project to Eclipse
-    5. Save File, Export file [with proper naming convention], drag-and-drop
-       back to dropbox
-    6. TA opens the dropbox, to drag-and-drop each student directory into their
-       home directory.
-    7. Export each project into Eclipse to run it.
-    8. TA copy-and-pastes each student’s code into a text document to be
-       converted into a PDF for commenting (or uses existing script).
-    9. TA creates a rubric `.txt` file as a baseline for each student’s lab.
-    10. TA adds comments to each students PDF on specific lines of code and adds
-        the rubric.
-    11. TA emails the commented PDF and grade file to each student.
-    12. Adds grade to a Google Spreadsheet.
-+ [Proposed Workflow][a]
-    1. Professor pushes Eclipse project (with Readme instructions and working
+    + **Proposed Workflow**
+        1. Professor pushes Eclipse project (with Readme instructions and working
        example`.jar` file) to the `upstream` GitHub repo.
-    2. Student `pull`s the updated repository and creates a new branch called `labXX`
-    3. Student adds, commits, and pushes their completed assignment to
+        2. Student `pull`s the updated repository and creates a new branch called `labXX`
+        3. Student adds, commits, and pushes their completed assignment to
        `origin/labXX`
-    4. Student creates a Pull Request.
-    5. TA clones repos with [`teachers_pet`](1) (first time only, subsequent
+        4. Student creates a Pull Request.
+        5. TA clones repos with [`teachers_pet`](1) (first time only, subsequent
        assignments would be retrieved using git maintenance software such as
        [`myrepos`](https://myrepos.branchable.com/) )
-    8. TA provides inline comments on the pull request and a grade in the final
+       6. TA provides inline comments on the pull request and a grade in the final
        comment of the PR.  Once it has been graded the TA merges the PR and
        records the grade in the grade book. 
+    + Current Workflow
+        1. Professor uploads Html Writeup to server.
+        2. Professor adds Eclipse starter code to permissions-controlled dropbox
+        3. Students drag-and-drop the starter code to their workspace
+        4. Students import the project to Eclipse
+        5. Save File, Export file [with proper naming convention], drag-and-drop
+           back to dropbox
+        6. TA opens the dropbox, to drag-and-drop each student directory into their
+           home directory.
+        7. Export each project into Eclipse to run it.
+        8. TA copy-and-pastes each student’s code into a text document to be
+           converted into a PDF for commenting (or uses existing script).
+        9. TA creates a rubric `.txt` file as a baseline for each student’s lab.
+        10. TA adds comments to each students PDF on specific lines of code and adds
+            the rubric.
+        11. TA emails the commented PDF and grade file to each student.
+        12. Adds grade to a Google Spreadsheet.
+
 
 + What software needs to be installed on the lab computers?
     + [Eclipse with the EGit plugin](http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/marsr)
@@ -484,7 +485,7 @@ capability. This would only be used in future iterations of the course.
 #### Revert, Revert, Revert
 If the propsosed changes were to be implemented and then later found to be a
 hinderence, the lab section could revert to the standard instructions and workflow.
-TAs could moved the cloned repositories and student code to the PO network.
+TAs could move the cloned repositories and student code to the PO network.
 
 ## *Git*-ing on with it: Next Steps
   1. Create a Pomona College Github Organization and Sign up for [GitHub for Education](https://education.github.com/discount_requests/new) ASAP. 
