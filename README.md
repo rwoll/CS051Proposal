@@ -46,7 +46,6 @@ classroom could help students learn invaluable versioned development skills
 that can be transferred to their personal projects, future classes,
 and careers.
 
-Learning Git itself is a baseline skill for anyone working in the industry.
 Students who are well versed in git will have a leg up both during their internships,
 as well as once they leave college to continue on to graduate school or their careers.
 Its use also promotes a better coding practice, and would force students to
