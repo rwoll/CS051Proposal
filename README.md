@@ -120,15 +120,14 @@ IDE.**
    student GitHub repositories into EGit in Eclipse. This will allow for the grader to
    easily switch between compiling and running different student's code without
    the need to drag-and-drop source code.
-   With one command made possible by [this script]() they will be able to pull an entire
-   lab sections submissions!
+   With one command they will be able to pull an entire lab sections submissions!
 
 For more details on the inner workings of this architecture design, [view this section](ARCHITECTURE.md).
 
 ## EGit
 
-EGit is an [Eclipse Git plug-in that ships with the newer distributions of Eclipse](http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/marsr).
-It allows for the easy integration of a Git workflow into the IDE and adds a GUI
+EGit is an Eclipse Git plug-in
+that allows for the easy integration of a Git workflow into the IDE and adds a GUI
 to simplify many steps. 
 
 With EGit, you can `ctrl`-click and import a single project or an entire repository
@@ -238,6 +237,13 @@ code soon after the lab deadline so the commit history is protected.
 Setting everthing up on Macs would be easy since the lab computer instructions will
 apply. On Windows machines, the setup would require a few more steps to get Git up
 and running. 
+
+#### Distracting Git
+
+If not carefully explained in instructions, using Git in the workflow could distract from
+the CS051 curriculum. In an effort to avoid this and provide a level of abstraction between
+Git and our use-case, we have written custom [aliases](configure_git.py) to students don't have to spend time
+learning Git.
 
 ## Implementation Details
 
