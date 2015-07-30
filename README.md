@@ -15,15 +15,14 @@ the bottom of the page.
 
 Create and run an experimental CS051 Lab Section for Fall 2015, that uses
 GitHub and EGit (a standard Eclipse plugin) to optimize the lab
-**distribution-submission-feedback** cycle for students, TAs and professors. 
+**distribution-submission-feedback** cycle for students, TAs, and professors. 
 
 As an added benefit, the adoption of the proposed workflow would expose students
 to the basics of an industry standard versioning tool that promotes incremental
 and efficient programming and development.
 
 A success in this experiment is defined by the adoption of the workflow leading
-to a decrease in overhead and an increase in the quality of grading and feedback
-process.
+to a decrease in overhead and an increase in the quality of grading and feedback.
 
 ## Personal Motivation
 
@@ -122,8 +121,6 @@ for each student to which students would push their completed assignments....
 ### Configuration
 
 ## Questions to Consider
-
-## Case Studies
 
 ## Case Studies
 
