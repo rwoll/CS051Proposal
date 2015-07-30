@@ -12,8 +12,9 @@ To access these materials directly, browse the top level directory.
 ## The Proposal
 
 Run an experimental CS051 Lab Section for Fall 2015, that uses
-GitHub and [EGit]() (a standard Eclipse plugin) to optimize the lab
-**distribution-submission-feedback** cycle for students, TAs, and professors. 
+GitHub and [EGit](http://www.eclipse.org/egit/?replytocom=14044) (a standard 
+Eclipse plugin) to optimize the lab **distribution-submission-feedback** cycle
+for students, TAs, and professors. 
 
 As an added benefit, the adoption of the proposed workflow would expose students
 to the basics of an industry standard versioning tool that promotes incremental
@@ -65,9 +66,9 @@ Professors will have a clear view into the types of problems TAs find in student
 code. An easily accessible history of student code and TA feedback will provide
 insight into student progress and developed habits throughout the semester.
 
-> **NOTE:** With the [GitHub Education plan (Free)](), all student code will be
-> hosted in private locations. Only TAs, professors, and the student
-> will have access to view/edit their repository.
+> **NOTE:** With the [GitHub Education plan (Free)](https://education.github.com/discount_requests/new), 
+> all student code will be hosted in private repos. Only TAs, professors,  and 
+> the student will have access to view/edit their repository.
 > They will **NOT** be publicly visible nor will they be visible by other students.
 
 ### Dynamic Lab Materials
@@ -206,52 +207,58 @@ as Markdown for which GitHub has sleek rendering.
 
 #### Merge Conflicts
 
-With the design of the starter code repositoy and the instructions for how to use
+With the design of the starter code repository and the instructions for how to use
 Git, we hope to avoid as many merge conflicts as possible. However, they may arise
 and when they do, students may be uncomfortable resolving them, so TAs and professors
-might need to provide assistance.
+might need to provide assistance.  EGit provides a GUI merge conflict resolution
+[tool](http://wiki.eclipse.org/EGit/User_Guide#Resolving_a_merge_conflict)
+that will facilitate the process.
 
 As long as students commit code and push it to GitHub, TAs and professors could help
 resolve these remotely and have students pull in the changes or reclone the remote 
 repository.
 
+Alternatively, EGit provides a GUI merge conflict resolution
+[tool](http://wiki.eclipse.org/EGit/User_Guide#Resolving_a_merge_conflict)
+that will facilitate the process.
+
 #### Student Assests Don't Make It Into Eclipse
 
 On projects where students include graphics or audio for extra credit, they will have
-to make sure it gets copied into their working directory and not simply refered to by
-Eclipse (since there isn't technically a fully packaged export).
+to make sure the additional assets get copied into their working directory.
 
 #### Students Could Tamper with Commit Timestamps
 
 Students could fake commit hisories to make it look like they've handed something in
-prior to their actual submission time. As suggested in various other classroom write-ups
-of including GitHub, TAs could clone the student code soon after the lab deadline so the code
-is protected from students tampering with it.
+prior to their actual submission time. A simple solution is for TAs to clone student 
+code soon after the lab deadline so the commit history is protected.
 
 #### Personal Machine Support
 
 Setting everthing up on Macs would be easy since the lab computer instructions will
 apply. On Windows machines, the setup would require a few more steps to get Git up
-and running.
+and running. 
 
 ## Implementation Details
 
-This section contains links to scripts and documents that we have compiled
-to explain all the details of implementation. They have been tested locally.
+This section contains links to tested scripts and documents that we have compiled
+to explain all the details of implementation.
 
 <LINKS TO DOCUMENTS>
 
 ## *Git*-ing It Ready: Necessary Steps
 
 1. Create a Pomona College GitHub organization and apply for the GitHub Education offer.
-   (Aprroval takes 1-2 weeks.)
+   (Approval takes 1-2 weeks.)
 2. Configure lab computers by installing a distribution of Eclipse that has EGit
    bundled in, or install the EGit plug-in seperately.
-3. Once the Github for Education is approved, create a cs051-fa2015 repository belonging to the Pomona College organization,    and push the first lab.
+3. Once the Github for Education is approved, create a cs051-fa2015 repository belonging 
+   to the Pomona College organization, and push the first lab.
 4. On or prior to the first day of lab, have participating students register for a GitHub account,
-   and collect their GitHub usernames so the sandboxed repositories can be set up with `teachers_pet`.
+   and collect their GitHub usernames.  Once these are collected, the sandboxed repositories can be 
+   set up with `teachers_pet`.
 
-> Eric and Ross would be able to complete step 3 and part of step 4 (setting up the sandboxes).
+> Eric and Ross would be able to complete step 3 and part of step 4 (setting up the sandboxed repos).
 
 * * *
 #### Links and References
