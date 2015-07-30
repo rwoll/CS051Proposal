@@ -20,15 +20,15 @@ As an added benefit, the adoption of the proposed workflow would expose students
 to the basics of an industry standard versioning tool that promotes incremental
 and efficient programming and development.
 
-A success in this implementation of the proposed workflow is defined by
+A success in the implementation of the proposed workflow is defined by
 a decrease in overhead and an increase in the quality of grading and feedback.
 
 ## Personal Motivation
 
-In our internships this summer, we learned the valuable incremental
+In our internships this summer, we learned the valuable, incremental
 version-controlled code-production pattern employed by software companies who 
-wish to produce code with low technical debt. We hope to leverage elements from
-our internship workflows to optimize the CS051 workflow and share a baseline
+wish to produce code with low technical debt. We hope to leverage elements of
+these workflows to optimize the CS051 lab cycle and share a baseline
 knowledge of an invaluable and ubiquitous tool.
 
 ## Overview: Why Consider GitHub?
@@ -47,6 +47,8 @@ optimized and reduced to **5** basic steps:
 | **TA**           | [GitHub Commenting][1]  | *allows TA to comment directly on specific lines of student code and leave valuable feedback that the professors can also review and easily add to* |
 
 > **NOTE:** All the student steps can be completed without leaving Eclipse.
+> The actions are possible due to git aliasing. See [this configuration file](configure_git.py)
+> for further information.
 
 From a TA or Professor's perspective, using GitHub could help **maximize the
 feedback students receive** on their code by reducing the number of steps
@@ -59,7 +61,7 @@ With code edits and comments from students, TAs, and professors captured online
 by GitHub, course participants will have a history of their development throughout
 the semester. This would eliminate the trail of hard-to-follow PDF code emails.
 
-Professors can review TA comments **quality assurance** across the lab sections
+Professors can review TA comments for **quality assurance** across the lab sections
 and TAs can view eachother's comments to ensure consistency.
 
 Professors will have a clear view into the types of problems TAs find in student
@@ -79,7 +81,7 @@ of the `starter-code/master` repository allows TAs and professors to maintain an
 improve the documention on the use of Git and GitHub as a workflow ***simplification
 and optimization tool***.
 
-### The TL;DR: We <3 GitHub
+### The tl;dr: GitHub is Great
 
 While in its simplest form, GitHub could serve as an
 online dropbox that allows for more efficient distribution and collection of
@@ -88,10 +90,10 @@ enhance the CS051 distribution-submission-feedback cycle.
 
 ## *Git*-ing Into It: How Would this Work?
 
-At the begining of the semester, the TAs would [setup private, sandboxed repositories]()
+At the begining of the semester, the TAs would [setup private, sandboxed repositories](SANDBOXING.md)
 for each student to which students would push their completed assignments. [Eclipse would
-be configured with EGit](), so students can complete the entire process without leaving the
-IDE.
+be configured with EGit](EGIT_USE.md), so **students can complete the entire process without leaving the
+IDE.**
 
 ### General Architecture: The Repositories
 
@@ -121,11 +123,11 @@ IDE.
    With one command made possible by [this script]() they will be able to pull an entire
    lab sections submissions!
 
-For more details on the inner workings of this architecture design, [view this section]().
+For more details on the inner workings of this architecture design, [view this section](ARCHITECTURE.md).
 
 ## EGit
 
-EGit is an Eclipse Git plug-in that ships with the newer distributions of Eclipse.
+EGit is an [Eclipse Git plug-in that ships with the newer distributions of Eclipse](http://www.eclipse.org/downloads/packages/eclipse-ide-java-developers/marsr).
 It allows for the easy integration of a Git workflow into the IDE and adds a GUI
 to simplify many steps. 
 
@@ -138,9 +140,7 @@ When it's time to commit changes and push them to the grading repository, EGit p
 a simple dialog box to confirm which files are being added and to include a simple commit
 message.
 
-For more on the configuration of EGit in the proposed design, [view this section]().
-
-<SCREEN SHOTS>
+For more on the configuration of EGit in the proposed design, [view this section](EGIT_USE.md).
 
 ## Adaptations: Working with the Existent Assignments
 
@@ -150,9 +150,11 @@ workspaces and complete. The write-ups would be modified slightly to include ins
 that specify the Git related actions; these write-ups can be left in Html or rewritten
 as Markdown for which GitHub has sleek rendering.
 
+For more information on modifying the existing code base, view [this document](IMPLEMENTATION.md#modifications-to-existing-codebase).
+
 ## Case Studies
 
-### School of Engineering and Design, Institute of Technology (Ireland)
+### [School of Engineering and Design, Institute of Technology (Ireland)](http://www.academia.edu/5968989/Employing_Git_in_the_Classroom)
 
 #### Motivation
 
@@ -182,7 +184,7 @@ as Markdown for which GitHub has sleek rendering.
   features served to their confound their nascent understanding."
 > *- John Kelleher*
 
-### Iowa State University: Principles of Programming Languages Course
+### [Iowa State University: Principles of Programming Languages Course](https://joshldavis.com/2014/06/30/github-university-follow-up/)
 
 #### Distributing Assignments
 
