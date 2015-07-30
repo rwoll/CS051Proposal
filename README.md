@@ -204,6 +204,36 @@ as Markdown for which GitHub has sleek rendering.
 
 ## What Could Go Wrong?
 
+#### Merge Conflicts
+
+With the design of the starter code repositoy and the instructions for how to use
+Git, we hope to avoid as many merge conflicts as possible. However, they may arise
+and when they do, students may be uncomfortable resolving them, so TAs and professors
+might need to provide assistance.
+
+As long as students commit code and push it to GitHub, TAs and professors could help
+resolve these remotely and have students pull in the changes or reclone the remote 
+repository.
+
+#### Student Assests Don't Make It Into Eclipse
+
+On projects where students include graphics or audio for extra credit, they will have
+to make sure it gets copied into their working directory and not simply refered to by
+Eclipse (since there isn't technically a fully packaged export).
+
+#### Students Could Tamper with Commit Timestamps
+
+Students could fake commit hisories to make it look like they've handed something in
+prior to their actual submission time. As suggested in various other classroom write-ups
+of including GitHub, TAs could clone the student code soon after the lab deadline so the code
+is protected from students tampering with it.
+
+#### Personal Machine Support
+
+Setting everthing up on Macs would be easy since the lab computer instructions will
+apply. On Windows machines, the setup would require a few more steps to get Git up
+and running.
+
 ## Implementation Details
 
 This section contains links to scripts and documents that we have compiled
