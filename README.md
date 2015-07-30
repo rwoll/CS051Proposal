@@ -210,17 +210,15 @@ as Markdown for which GitHub has sleek rendering.
 With the design of the starter code repository and the instructions for how to use
 Git, we hope to avoid as many merge conflicts as possible. However, they may arise
 and when they do, students may be uncomfortable resolving them, so TAs and professors
-might need to provide assistance.  EGit provides a GUI merge conflict resolution
+might need to provide assistance.
+
+Fortunately, EGit provides a GUI merge conflict resolution
 [tool](http://wiki.eclipse.org/EGit/User_Guide#Resolving_a_merge_conflict)
 that will facilitate the process.
 
 As long as students commit code and push it to GitHub, TAs and professors could help
-resolve these remotely and have students pull in the changes or reclone the remote 
+resolve these remotely and have students pull in the changes or reclone the remote
 repository.
-
-Alternatively, EGit provides a GUI merge conflict resolution
-[tool](http://wiki.eclipse.org/EGit/User_Guide#Resolving_a_merge_conflict)
-that will facilitate the process.
 
 #### Student Assests Don't Make It Into Eclipse
 
