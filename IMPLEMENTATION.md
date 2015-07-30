@@ -60,18 +60,3 @@ publish_lab () {
       the rubric.
   11. TA emails the commented PDF and grade file to each student.
   12. Adds grade to a Google Spreadsheet.
-
-
-#### Grading
-A few ideas regarding possible grading scenarios:
-  1. Git use would be in integral part of the grade, to be taken away from
-      design or style, only to be deducted in cases of severe misuse (all in
-      one commit, or 100 infinitesimal commits)
-  2. Git use would be an additional point in the lab rubric.  So labs that were
-      previously worth 10 points, would now be worth 11, with an additional
-      point only to be deducted in cases of severe misuse (as above)
-  3. Git use would not be a standard part of the lab rubric, but an additional
-      extra credit point would be awarded for exceptional use (and would be 
-      not given only in cases of extreme misuse).
-  4. Git use is excluded entirely from the grading, and no points -- standard 
-      or extra credit -- would be awarded or deducted.
