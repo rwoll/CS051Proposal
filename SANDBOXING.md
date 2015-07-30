@@ -4,7 +4,10 @@
 
 A Sandboxed Repo is one to which only one student has access (along with the 
 TAs and Professors).  It is private, owned by the `PomonaCS051` GitHub
-organization, and here, will be used to house student submissions. 
+organization, and here, will be used to house student submissions.
+At the conclusion of the semester, the professors will have the ability
+to remove student permissions to these repositories or delete them entirely.
+Archival copies can be cloned to the CS051 dropbox.
 
 ## How does it work?
 
@@ -20,5 +23,10 @@ For each student:
   3. Set that team to have Push/Pull permissions.
   4. Add the student to that team.
   5. Give that team access to the corresponding repository.
+
+With the aid of `teachers_pet`, these 5 steps are automated. A `.csv` file
+will contain the information of the TAs and professors and another file will
+contain each students information. From these documents, `teachers_pet` hooks
+into the GitHub API to set up all the permisions and complete the sandboxing process.
 
 
