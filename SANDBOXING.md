@@ -24,9 +24,10 @@ For each student:
   4. Add the student to that team.
   5. Give that team access to the corresponding repository.
 
-With the aid of `teachers_pet`, these 5 steps are automated. A `.csv` file
-will contain the information of the TAs and professors and another file will
-contain each students information. From these documents, `teachers_pet` hooks
-into the GitHub API to set up all the permisions and complete the sandboxing process.
+With the aid of `teachers_pet`, these 5 steps are [automated](https://github.com/education/teachers_pet#basic-setup).
+A `students` file will contain the information of all the participating students,
+and an `Owners.csv` file will contain the names od all the TAs and professors.
+From these documents, `teachers_pet` hooks into the GitHub API to set up all
+the permisions and complete the sandboxing process.
 
 
