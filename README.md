@@ -143,6 +143,12 @@ For more on the configuration of EGit in the proposed design, [view this section
 
 ## Adaptations: Working with the Existent Assignments
 
+The current labs (including write-ups, exemplars, and starter code) would simply need
+to be published to the starter code repository each week for students to pull into their
+workspaces and complete. The write-ups would be modified slightly to include instructions
+that specify the Git related actions; these write-ups can be left in Html or rewritten
+as Markdown for which GitHub has sleek rendering.
+
 ## Case Studies
 
 ### School of Engineering and Design, Institute of Technology (Ireland)
