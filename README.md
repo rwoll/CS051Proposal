@@ -5,24 +5,22 @@ GitHub + Eclipse: A CS051 Proposal
 *This proposal has been compiled by [Ross W](mailto:ross.wollman@pomona.edu)
 and [Eric C](mailto:eric.campbell@pomona.edu).*
 
-The sample assignment repository can be found [here](https://github.com/rwoll/GitHubEclipse).
-
-Additional reading on all the tools and processes explained can be found at
-the bottom of the page.
+Additional reading and implementation details are linked throughout the document.
+To access these materials driectly, browse the top level directory.
 * * *
 
 ## The Proposal
 
-Create and run an experimental CS051 Lab Section for Fall 2015, that uses
-GitHub and EGit (a standard Eclipse plugin) to optimize the lab
+Run an experimental CS051 Lab Section for Fall 2015, that uses
+GitHub and [EGit]() (a standard Eclipse plugin) to optimize the lab
 **distribution-submission-feedback** cycle for students, TAs, and professors. 
 
 As an added benefit, the adoption of the proposed workflow would expose students
 to the basics of an industry standard versioning tool that promotes incremental
 and efficient programming and development.
 
-A success in this experiment is defined by the adoption of the workflow leading
-to a decrease in overhead and an increase in the quality of grading and feedback.
+A success in this implementation of the proposed workflow is defined by
+a decrease in overhead and an increase in the quality of grading and feedback.
 
 ## Personal Motivation
 
@@ -39,12 +37,12 @@ knowledge of an invaluable and ubiquitous tool.
 Simply put, the ***entire*** distribution-submission-feedback cycle would be
 optimized and reduced to **5** basic steps:
 
-| Who              | What                    | Explanation                   |
-| :----------------| :----------------------:| :-----------------------------|
-| **Professor:**   | `publish_lab lab47`     | *makes lab 47 available to all students* |
-| **Student**      | `git starterCode && git newLab lab47`|  *brings the latest starter assignment/starter code into the students Eclipse environment and creates a branch for them to work the lab on.*|
-| **Student**      | `git submit lab47`      | *pushes the students work to GitHub for the TA to evaluate* |
-| **TA**           | `get_student_code`      | *pulls an entire sections latest submissions from GitHub into the Eclipse environment* |
+| Who              | Action                  | Description                   |
+|:-----------------|:-----------------------:|:------------------------------|
+| **Professor**    | `publish_lab lab47`     | *makes lab 47 available to all students* |
+| **Student**      | `git starterCode && git newLab lab47`| *brings the latest assignment and starter code into the students Eclipse environment and creates a branch for their work*|
+| **Student**      | `git submit lab47`      | *pushes the student's work to GitHub for the TA to evaluate* |
+| **TA**           | `get_student_code`      | *pulls an entire section's latest submissions from GitHub into the Eclipse environment* |
 | **TA**           | [GitHub Commenting][1]  | *allows TA to comment directly on specific lines of student code and leave valuable feedback that the professors can also review and easily add to* |
 
 > **NOTE:** All the student steps can be completed without leaving Eclipse.
@@ -57,39 +55,42 @@ and facilitate the dissemination of feedback.
 ### Transparency
 
 With code edits and comments from students, TAs, and professors captured online
-by GitHub, course participants will have a **history of their development** throughout
+by GitHub, course participants will have a history of their development throughout
 the semester. This would eliminate the trail of hard-to-follow PDF code emails.
 
 TAs and professors can review eachother's comments for consistency in grading
-and **assurance quality** across the lab sections and different graders.
+and **quality assurance** across the lab sections (and different graders).
 
 Professors will have a clear view into the types of problems TAs find in student
-code and have an easily accessible histroy of a particular student's coding development
+code, and an easily accessible histroy of student code a TA feedback will provide
+insight into student progress and habits developed throughout the semester.
 
-> **NOTE:** With the GitHub (Free) Education plan, all student code will be
-> hosted in private locations. Only TAs, professors, and an individual student
-> will have access to viewing/editing their repositories.
-> They will **NOT** be publicly visible.
+> **NOTE:** With the [GitHub Education plan (Free)](), all student code will be
+> hosted in private locations. Only TAs, professors, and the student
+> will have access to viewing/editing their repository.
+> They will **NOT** be publicly visible nor will they be visible by other students.
 
 ### Dynamic Lab Materials
 
-Another advantage of GitHub in the development of this new workflow is
-as a resource for TAs and professors. The source-controlled nature of the master
-starter-code/instruction repository allows TAs and professors to maintain and 
-improve the documention on the use of Git and GitHub as a workflow simplification
-and optimization tool.
+Another advantage of using GitHub in the development of this new workflow is
+its service as a resource for TAs and professors. The source-controlled nature
+of the `starter-code/master` repository allows TAs and professors to maintain and 
+improve the documention on the use of Git and GitHub as a workflow ***simplification
+and optimization tool***.
 
 ### The TL;DR: We <3 GitHub
 
-While in its simplest form, GitHub could act as little more than a glorified
+While in its simplest form, GitHub could serve as an
 online dropbox that allows for more efficient distribution and collection of
 assignments, there are many other features of Git and GitHub that could
-add greatly to the CS051 workflow and the distribution-submission-feedback cycle.
+enhance the CS051 distribution-submission-feedback cycle.
 
 ## *Git*-ing Into It: How Would this Work?
 
-At the begining of the semester, the TAs would setup private, sandboxed repositories
-for each student to which students would push their completed assignments....
+At the begining of the semester, the TAs would [setup private, sandboxed repositories]()
+for each student to which students would push their completed assignments. [Eclipse would
+be configured with EGit](), so students can complete the entire process without leaving the
+IDE.
 
 ### General Architecture: The Repositories
 
@@ -97,30 +98,29 @@ for each student to which students would push their completed assignments....
 
 1. **Starter Code Repository** (GitHub): Professors would push new lab assignments to this
    repository that will be pull-only for students. This will end up becoming a
-   collection of all the lab materials--setup instructions, examples, starter-
-   code, and more. When an assignment is added, students will be able to easily
-   and efficiently pull in the new updates and additions directly into the 
-   Eclipse environment.
-2. **Student Working Repositories**(Local): Each student will have a repository that
+   collection of all the lab materials--setup instructions, examplars, and starter-code.
+   When an assignment is added, students will be able to easily
+   and efficiently pull in the new updates directly into their Eclipse environment.
+2. **Student Working Repositories** (Local): Each student will have a repository that
    contains their work on the assignments. This will be configured with Eclipse's
    EGit plugin to make the pushing and pulling updates out of Eclipse seamless.
-   Due to a specifically designed remote scheme, this repository will be able
+   With a specifically designed remote scheme, this repository will be able
    to easily pull in updates and new assignments from the Starter Code Repository.
    At the start of the semester students will follow instructions to setup this
    repositry and configure it with [this handy script]().
-3. **Submission Repositories**(GitHub): These repositories are GitHub hosted clones
+3. **Submission Repositories** (GitHub): These repositories are GitHub hosted duplicates
    of the student working repositories. Each student will have a private, sandboxed
    repository. Since they are hosted on GitHub, students, TAs, and professors
    can take advantage of GitHub's commenting tools and [Pull Requests]().
-4. **TA Clones**(Local): TAs, their first time grading, will clone and add the
-   student GitHub repositories to EGit in Eclipse. This will allow for them to
-   easily switch between compiling and running different students code. With one
-   command made possible by [this script]() they will be able to update an entire
-   sections repositories at once! 
+4. **TA Clones** (Local): TAs, for their first time grading, will clone and add the
+   student GitHub repositories to EGit in Eclipse. This will allow for the grader to
+   easily switch between compiling and running different student's code. With one
+   command made possible by [this script]() they will be able to pull an entire
+   lab sections submissions! 
 
-### Configuration
+## EGit
 
-## Questions to Consider
+## Adaptations: Working with the Existent Assignments
 
 ## Case Studies
 
@@ -174,6 +174,15 @@ for each student to which students would push their completed assignments....
 > "If I had to be a TA again, I would pick to use GitHub in a heartbeat. It
   saved us a ton of time in not only releasing homeworks but grading them."
 > *- Josh Davis*
+
+## What Could Go Wrong?
+
+## Implementation Details
+
+This section contains links to scripts and documents that we have compiled
+to explain all the details of implementation. They have been tested locally.
+
+<LINKS TO DOCUMENTS>
 
 * * *
 #### Links and References
