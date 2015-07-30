@@ -243,6 +243,16 @@ to explain all the details of implementation. They have been tested locally.
 
 ## *Git*-ing It Ready: Necessary Steps
 
+1. Create a Pomona College GitHub organization and apply for the GitHub Education offer.
+   (Aprroval takes 1-2 weeks.)
+2. Configure lab computers by installing a distribution of Eclipse that has EGit
+   bundled in, or install the EGit plug-in seperately.
+3. Once the Github for Education is approved, create a cs051-fa2015 repository belonging to the Pomona College organization,    and push the first lab.
+4. On or prior to the first day of lab, have participating students register for a GitHub account,
+   and collect their GitHub usernames so the sandboxed repositories can be set up with `teachers_pet`.
+
+> Eric and Ross would be able to complete step 3 and part of step 4 (setting up the sandboxes).
+
 * * *
 #### Links and References
 [1]: https://help.github.com/articles/commenting-on-the-diff-of-a-pull-request/
