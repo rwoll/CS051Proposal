@@ -243,8 +243,14 @@ and running.
 
 This section contains links to tested scripts and documents that we have compiled
 to explain all the details of implementation.
++ [Architecure Details](ARCHITECTURE.md)
++ [EGit Use](EGIT_USE.md)
++ [Sandboxing with `teachers_pet`](SANDBOXING.md)
++ [Repository Remote and Alias Configuration Script](configure_git.py)
 
-<LINKS TO DOCUMENTS>
+## The Good, the Bad, and the Merge Conflict
++ [Pros and Cons Comparison](PROS_CONS.md)
++ [Current vs. Proposaed Workflow Comparison](IMPLEMENTATION.md#proposed-workflow)
 
 ## *Git*-ing It Ready: Necessary Steps
 
@@ -264,3 +270,11 @@ to explain all the details of implementation.
 #### Links and References
 [1]: https://help.github.com/articles/commenting-on-the-diff-of-a-pull-request/
 
+## References and Further Reading
++ [Employing Git in the Classroom](http://www.academia.edu/5968989/Employing_Git_in_the_Classroom)
++ [GitHub Official Education Guide](https://education.github.com/guide)
++ [`teachers_pet` Documentation](https://github.com/education/teachers_pet/#giving-others-access)
++ [GitHub + University: A Follow Up](https://joshldavis.com/2014/06/30/github-university-follow-up/)
++ [EGit (Eclipse Git) Documentation](http://www.eclipse.org/egit/documentation/)
++ [Difficulties of Using GitHub in the Classroom](https://github.com/education/teachers/issues/2)
++ [GitHub Cheat Sheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
