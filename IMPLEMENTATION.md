@@ -1,7 +1,7 @@
 # Implementation Details
 
 ## Architecture
-See [here]() for a detailed description of the codeflow
+See [here](ARCHITECTURE.md) for a detailed description of the codeflow
 
 ## Modifications to existing Codebase
 All that needs to be done, is to initialize a repository, using Git or
@@ -75,5 +75,3 @@ A few ideas regarding possible grading scenarios:
       not given only in cases of extreme misuse).
   4. Git use is excluded entirely from the grading, and no points -- standard 
       or extra credit -- would be awarded or deducted.
-
-
