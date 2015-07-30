@@ -42,7 +42,8 @@ publish_lab () {
   5. TA clones repos 
   6. TA provides inline comments on the pull request and a grade in the final
      comment of the PR.  Once it has been graded the TA merges the PR and
-     records the grade in the grade book. 
+     records the grade in the grade book.
+
 ### Current Workflow
   1. Professor uploads Html Writeup to server.
   2. Professor adds Eclipse starter code to permissions-controlled dropbox
