@@ -6,7 +6,7 @@ GitHub + Eclipse: A CS051 Proposal
 and [Eric C](mailto:eric.campbell@pomona.edu).*
 
 Additional reading and implementation details are linked throughout the document.
-To access these materials driectly, browse the top level directory.
+To access these materials directly, browse the top level directory.
 * * *
 
 ## The Proposal
@@ -30,7 +30,7 @@ wish to produce code with low technical debt. We hope to leverage elements from
 our internship workflows to optimize the CS051 workflow and share a baseline
 knowledge of an invaluable and ubiquitous tool.
 
-## Overview: Why consider GitHub?
+## Overview: Why Consider GitHub?
 
 ### Simplicity: More Coding and More Feedback
 
@@ -38,7 +38,7 @@ Simply put, the ***entire*** distribution-submission-feedback cycle would be
 optimized and reduced to **5** basic steps:
 
 | Who              | Action                  | Description                   |
-|:-----------------|:-----------------------:|:------------------------------|
+|:----------------:|:-----------------------:|:------------------------------|
 | **Professor**    | `publish_lab lab47`     | *makes lab 47 available to all students* |
 | **Student**      | `git starterCode && git newLab lab47`| *brings the latest assignment and starter code into the students Eclipse environment and creates a branch for their work*|
 | **Student**      | `git submit lab47`      | *pushes the student's work to GitHub for the TA to evaluate* |
@@ -58,22 +58,22 @@ With code edits and comments from students, TAs, and professors captured online
 by GitHub, course participants will have a history of their development throughout
 the semester. This would eliminate the trail of hard-to-follow PDF code emails.
 
-TAs and professors can review eachother's comments for consistency in grading
-and **quality assurance** across the lab sections (and different graders).
+Professors can review TA comments **quality assurance** across the lab sections
+and TAs can view eachother's comments to ensure consistency.
 
 Professors will have a clear view into the types of problems TAs find in student
-code, and an easily accessible histroy of student code a TA feedback will provide
-insight into student progress and habits developed throughout the semester.
+code. An easily accessible history of student code and TA feedback will provide
+insight into student progress and developed habits throughout the semester.
 
 > **NOTE:** With the [GitHub Education plan (Free)](), all student code will be
 > hosted in private locations. Only TAs, professors, and the student
-> will have access to viewing/editing their repository.
+> will have access to view/edit their repository.
 > They will **NOT** be publicly visible nor will they be visible by other students.
 
 ### Dynamic Lab Materials
 
 Another advantage of using GitHub in the development of this new workflow is
-its service as a resource for TAs and professors. The source-controlled nature
+its role as a resource for TAs and professors. The source-controlled nature
 of the `starter-code/master` repository allows TAs and professors to maintain and 
 improve the documention on the use of Git and GitHub as a workflow ***simplification
 and optimization tool***.
@@ -98,7 +98,7 @@ IDE.
 
 1. **Starter Code Repository** (GitHub): Professors would push new lab assignments to this
    repository that will be pull-only for students. This will end up becoming a
-   collection of all the lab materials--setup instructions, examplars, and starter-code.
+   collection of all the lab materials--setup instructions, exemplars, and starter-code.
    When an assignment is added, students will be able to easily
    and efficiently pull in the new updates directly into their Eclipse environment.
 2. **Student Working Repositories** (Local): Each student will have a repository that
@@ -108,17 +108,38 @@ IDE.
    to easily pull in updates and new assignments from the Starter Code Repository.
    At the start of the semester students will follow instructions to setup this
    repositry and configure it with [this handy script]().
-3. **Submission Repositories** (GitHub): These repositories are GitHub hosted duplicates
+3. **Submission Repositories** (GitHub): These repositories are GitHub hosted duplicates*
    of the student working repositories. Each student will have a private, sandboxed
    repository. Since they are hosted on GitHub, students, TAs, and professors
-   can take advantage of GitHub's commenting tools and [Pull Requests]().
-4. **TA Clones** (Local): TAs, for their first time grading, will clone and add the
-   student GitHub repositories to EGit in Eclipse. This will allow for the grader to
-   easily switch between compiling and running different student's code. With one
-   command made possible by [this script]() they will be able to pull an entire
-   lab sections submissions! 
+   can take advantage of GitHub's commenting tools and [Pull Requests]() as well
+   as view their development online.
+4. **TA Clones** (Local): TAs, for their first time grading, will clone the
+   student GitHub repositories into EGit in Eclipse. This will allow for the grader to
+   easily switch between compiling and running different student's code without
+   the need to drag-and-drop source code.
+   With one command made possible by [this script]() they will be able to pull an entire
+   lab sections submissions!
+
+For more details on the inner workings of this architecture design, [view this section]().
 
 ## EGit
+
+EGit is an Eclipse Git plug-in that ships with the newer distributions of Eclipse.
+It allows for the easy integration of a Git workflow into the IDE and adds a GUI
+to simplify many steps. 
+
+With EGit, you can `ctrl`-click and import a single project or an entire repository
+filled with multiple projects into Eclipse's standard Package Explorer
+Visual aids will also appear in the Package Explorer to depict a clear picture of
+the Git status of each project asset.
+
+When it's time to commit changes and push them to the grading repository, EGit provides
+a simple dialog box to confirm which files are being added and to include a simple commit
+message.
+
+For more on the configuration of EGit in the proposed design, [view this section]().
+
+<SCREEN SHOTS>
 
 ## Adaptations: Working with the Existent Assignments
 
@@ -183,6 +204,8 @@ This section contains links to scripts and documents that we have compiled
 to explain all the details of implementation. They have been tested locally.
 
 <LINKS TO DOCUMENTS>
+
+## *Git*-ing It Ready: Necessary Steps
 
 * * *
 #### Links and References
