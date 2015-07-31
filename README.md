@@ -126,9 +126,8 @@ For more details on the inner workings of this architecture design, [view this s
 
 ## EGit
 
-EGit is an Eclipse Git plug-in
-that allows for the easy integration of a Git workflow into the IDE and adds a GUI
-to simplify many steps. 
+EGit is an Eclipse Git plug-in that allows for the easy integration of a Git workflow into
+the IDE and adds a GUI. It ships with the newer releases of [Eclipse](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/marsr)
 
 With EGit, you can `ctrl`-click and import a single project or an entire repository
 filled with multiple projects into Eclipse's standard Package Explorer
@@ -284,3 +283,4 @@ to explain all the details of implementation.
 + [EGit (Eclipse Git) Documentation](http://www.eclipse.org/egit/documentation/)
 + [Difficulties of Using GitHub in the Classroom](https://github.com/education/teachers/issues/2)
 + [GitHub Cheat Sheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
++ [Eclipse IDE Download with EGit](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/marsr)
