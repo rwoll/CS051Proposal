@@ -14,7 +14,7 @@ submission_remote += last.lower().strip()
 submission_remote += "_fa2015"
 
 # add and rename remotes for clarity when pushing and pulling
-#os.system("git remote rename origin starter-code")
+os.system("git remote rename origin starter-code")
 os.system("git remote add submission " + submission_remote)
 
 # configure students info if it already been done through EGit
