@@ -95,6 +95,10 @@ for each student to which students would push their completed assignments. [Ecli
 be configured with EGit](EGIT_USE.md), so **students can complete the entire process without leaving the
 IDE.**
 
+At the start of the first labs, students would have to follow something similar to
+our [sample guide](LAB_STARTER.md) to get everything up and running.
+After the initial setup, there are very few steps involved.
+
 ### General Architecture: The Repositories
 
 ![ArchitectureImage](architecture_v.png)
@@ -251,6 +255,7 @@ to explain all the details of implementation.
 + [Architecure Details](ARCHITECTURE.md)
 + [EGit Use](EGIT_USE.md)
 + [Sandboxing with `teachers_pet`](SANDBOXING.md)
++ [Student Lab Configuration](LAB_STARTER.md)
 + [Repository Remote and Alias Configuration Script](configure_git.py)
 
 ## The Good, the Bad, and the Merge Conflict
