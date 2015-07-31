@@ -21,7 +21,7 @@ Student Development Environment Setup
     > expand the working directory in the Git Repositories pane 
     > and right-click to select *Import...*. Then hit next to accept the
     > default options.
-4. Click the `Terminal` icon in the top menu bar.
+4. Click the `Terminal` icon !["terminal"](/eclipse_images/tm_icon.png) in the top menu bar.
 5. Type `cd` + a space into the window that appears and copy the contents of
    you copied and saved in step 2.  It should look something like below. 
    ```
