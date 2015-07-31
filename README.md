@@ -96,7 +96,7 @@ for each student to which students would push their completed assignments. [Ecli
 be configured with EGit](EGIT_USE.md), so **students can complete the entire process without leaving the
 IDE.**
 
-At the start of the first labs, students would have to follow something similar to
+At the start of the first lab, students would have to follow something similar to
 our [sample guide](LAB_STARTER.md) to get everything up and running.
 After the initial setup, there are very few steps involved.
 
@@ -232,7 +232,7 @@ to make sure the additional assets get copied into their working directory.
 
 #### Students Could Tamper with Commit Timestamps
 
-Students could fake commit hisories to make it look like they've handed something in
+Students could fake commit histories to make it look like they've handed something in
 prior to their actual submission time. A simple solution is for TAs to clone student 
 code soon after the lab deadline so the commit history is protected.
 
@@ -249,6 +249,13 @@ the CS051 curriculum. In an effort to avoid this and provide a level of abstract
 Git and our use-case, we have written custom [aliases](EGIT_USE.md#terminal-or-gui) so students
 don't have to spend time learning Git.
 
+#### Where's My Code?
+
+Student's may forget to push code to GitHub for grading and leave it local. To mitigate this,
+students would be instructed to log on to GitHub after they have submitted an assignment to
+ensure that it is all there. If they have an issue, they can open an issue right from GitHub
+and tag the grading team to have them be notified and take a look.
+
 ## Implementation Details
 
 This section contains links to tested scripts and documents that we have compiled
@@ -258,6 +265,7 @@ to explain all the details of implementation.
 + [Sandboxing with `teachers_pet`](SANDBOXING.md)
 + [Student Lab Configuration](LAB_STARTER.md)
 + [Repository Remote and Alias Configuration Script](configure_git.py)
++ [Screenshots](SCREENSHOTS.md)
 
 ## The Good, the Bad, and the Merge Conflict
 + [Pros and Cons Comparison](PROS_CONS.md)
@@ -265,21 +273,27 @@ to explain all the details of implementation.
 
 ## *Git*-ing It Ready: Necessary Steps
 
+> If the CS051 faculty are interested in implementing the proposed workflow to part or 
+> all of a lab section, Ross and Eric would be happy to set up a demo and refine the
+> documentation further.
+> 
+> We have tested the general architecture in a local environment
+> and are confident, through research and partial testing, that the local simulation
+> will scale as desired.
+
 1. Create a Pomona College GitHub organization and apply for the GitHub Education offer.
    (Approval takes 1-2 weeks.)
 2. Configure lab computers by installing a distribution of Eclipse that has EGit
    bundled in, or install the EGit plug-in seperately.
-3. Once the Github for Education is approved, create a cs051-fa2015 repository belonging 
+3. Once the Github for Education is approved, create a `cs051-fa2015` repository belonging 
    to the Pomona College organization, and push the first lab.
 4. On or prior to the first day of lab, have participating students register for a GitHub account,
-   and collect their GitHub usernames.  Once these are collected, the sandboxed repositories can be 
+   and collect their GitHub usernames. Once these are collected, the sandboxed repositories can be 
    set up with `teachers_pet`.
 
 > Eric and Ross would be able to complete step 3 and part of step 4 (setting up the sandboxed repos).
 
 * * *
-#### Links and References
-[1]: https://help.github.com/articles/commenting-on-the-diff-of-a-pull-request/
 
 ## References and Further Reading
 + [Employing Git in the Classroom](http://www.academia.edu/5968989/Employing_Git_in_the_Classroom)
@@ -290,3 +304,6 @@ to explain all the details of implementation.
 + [Difficulties of Using GitHub in the Classroom](https://github.com/education/teachers/issues/2)
 + [GitHub Cheat Sheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
 + [Eclipse IDE Download with EGit](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/marsr)
+ 
+[1]: https://help.github.com/articles/commenting-on-the-diff-of-a-pull-request/
+
