@@ -28,7 +28,7 @@ discussed in lecture and the actual CS051 curriculum.
 
 Nonetheless, some command line interaction will be necessary, primarily for
 `pull`ing and `branch`ing.  So, to facilitate this process for the students,
-we created [this python script]() to create a simple, readable command line
+we created [this python script](configure_git.py) to create a simple, readable command line
 interface.  It is as follows
 
 | Alias               | Command                        | Effect                               |
