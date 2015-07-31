@@ -27,6 +27,6 @@ visit the [myrepos page](https://myrepos.branchable.com/).
 
 ## Why use `myrepos`?
 
-My `mr` will make the mass cloning and updating of TA repositories extremely easy
+`mr` will make the mass cloning and updating of TA repositories extremely easy
 and efficient. However, the `pull`ing and merging that `mr` does can be written
 into a bash script if users prefer.
