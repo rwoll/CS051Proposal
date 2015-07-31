@@ -1,7 +1,6 @@
 # EGit Use
 
 ## What is EGit?
-                                                                              |
 The EGit project is implementing Eclipse tooling on top of the JGit Java 
 implementation of Git EGit is a great tool that allows for an efficient 
 management and use of git commands within Eclipse. Eclipse projects produce a 
