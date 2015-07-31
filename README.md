@@ -113,12 +113,12 @@ After the initial setup, there are very few steps involved.
    EGit plugin to make the pushing and pulling updates out of Eclipse seamless.
    With a specifically designed remote scheme, this repository will be able
    to easily pull in updates and new assignments from the Starter Code Repository.
-   At the start of the semester students will follow instructions to setup this
-   repositry and configure it with [this handy script]().
+   At the start of the semester students will follow [instructions](LAB_STARTER.md) to setup this
+   repository and configure it with [this handy script](configure_git.py).
 3. **Submission Repositories** (GitHub): These repositories are GitHub hosted duplicates*
    of the student working repositories. Each student will have a private, sandboxed
    repository. Since they are hosted on GitHub, students, TAs, and professors
-   can take advantage of GitHub's commenting tools and [Pull Requests]() as well
+   can take advantage of GitHub's commenting tools and [Pull Requests](https://help.github.com/articles/commenting-on-the-diff-of-a-pull-request/) as well
    as view their development online.
 4. **TA Clones** (Local): TAs, for their first time grading, will clone the
    student GitHub repositories into EGit in Eclipse. This will allow for the grader to
