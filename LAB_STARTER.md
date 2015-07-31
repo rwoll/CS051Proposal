@@ -30,10 +30,12 @@ Student Development Environment Setup
    Hit return.  
    Then copy and paste the following:  
    ```
-   python configure_git.py  
+   sudo ython configure_git.py  
    ```
    Hit return.
-   Enter the information as it prompts you to and hit return after each prompt.
+   You will be prompted for your password.  Enter the password for the lab computer
+   and hit return.
+   Enter the remaining information as it prompts you to and hit return after each prompt.
 6. Right click on the "Lab01 [fa2015 master]" project in the *Project Explorer*
    panel.  Then click on **Team** *>* **Show in Repositories View**.  The *Git
    Repositories* view should open.
