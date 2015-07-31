@@ -1,5 +1,9 @@
-Eclipse and EGit Screenshot Examples
+Eclipse, EGit and GitHub Screenshot Examples
 ========
+## GitHub Commenting
+TAs can comment write on students code, and if the student has a quesiton, they
+can easily reply to the specific comment for clarification.
+!["pr_commenting"](https://help.github.com/assets/images/help/commits/hover-comment-icon.gif)
 
 ## Initial TA Lab Section Import (for Grading)
 TAs and professors can quickly import an entire lab sections code for compiling
