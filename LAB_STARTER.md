@@ -5,37 +5,40 @@ Student Development Environment Setup
 > register for one, simply sign up [here](https://github.com).
 
 1. Open Eclipse from the dock.
-2. In the Git Repositories view, click the clone icon.
-3. In the dialog box that appears, copy and paste the following 
-   (after changing `<your-name>` to be your name) into the *URI* box:
-   `https://github.com/PomonaCS051/<your-name>_fa2015`
-   > **Example:** For Cecil Sagehen,  
-   > `https://github.com/PomonaCS051/cecil-sagehen_fa2015`
-      
-4. Type in your GitHub username where it says "User" and your GitHub
-   password where it says "Password".
-5. Click **Next >**.
-6. Ensure the `master` branch is selected. Then click **Next >**.
-7. In the *Directory* box, copy and paste the following:
-       ```
-       $HOME/CS051
-       ```
-8. Check the box next to *Import all existing Eclipse projects after clone
-   finishes*. Then click **Finish**.
+2. Clone the repository.
+   1. Click on **File** *>* **Import** *>* **Git** *>* **Projects from Git**
+   2. Click on **Clone URI** and **Next >**.
+   3. In the **Source Git Repository** dialog box that appears, copy and paste
+      the following into the *URI* box: 
+      `https://github.com/PomonaCS051/fa2015.git`
+   4. Type in your GitHub username where it says "User" and your GitHub
+      password where it says "Password". Check the box next to "Store in Secure
+      Store" and click **Next >**. 
+   5. Ensure the `master` branch is selected. Then click **Next >**.
+2. Copy the text in the *Directory* box. Paste it somewhere safe. Click **Next >**
+3. Ensure the box next to Lab01 is checked. Then click **Finish**
+   
     > If Lab01 does not automatically appear in the package explorer,
     > expand the working directory in the Git Repositories pane 
     > and right-click to select *Import...*. Then hit next to accept the
     > default options.
-9. Click the `Terminal` icon in the top menu bar.
-8. Copy and paste the following into the window that appears after changin `<your-name>`:  
+4. Click the `Terminal` icon !["terminal"](/eclipse_images/tm_icon.png) in the top menu bar.
+5. Type `cd` + a space into the window that appears and copy the contents of
+   you copied and saved in step 2.  It should look something like below:   
    ```
-   cd $HOME/CS051/<your-name>_fa2015
+   cd /Users/cecilsagehen/git/fa2105
    ```  
    Hit return.  
    Then copy and paste the following:  
    ```
-   python configure_git.py  
+   sudo python configure_git.py  
    ```  
-   Enter the information as it prompts you to and hit return.
+   Hit return.
+   You will be prompted for your password.  Enter the password for the lab computer
+   and hit return.
+   Enter the remaining information as it prompts you to and hit return after each prompt.
+6. Right click on the "Lab01 [fa2015 master]" project in the *Project Explorer*
+   panel.  Then click on **Team** *>* **Show in Repositories View**.  The *Git
+   Repositories* view should open.
 
 **Once it says everything is complete, begin working on the lab!**

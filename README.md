@@ -57,16 +57,17 @@ and facilitate the dissemination of feedback.
 
 ### Transparency
 
-With code edits and comments from students, TAs, and professors captured online
-by GitHub, course participants will have a history of their development throughout
+With comments from students, TAs, and professors captured online by GitHub, 
+course participants will have a history of their development throughout
 the semester. This would eliminate the trail of hard-to-follow PDF code emails.
 
-Professors can review TA comments for **quality assurance** across the lab sections
-and TAs can view eachother's comments to ensure consistency.
+Professors can provide **quality assurance** by reviewing TA comments across the
+lab sections, and TAs can view eachother's comments to ensure consistency.
 
 Professors will have a clear view into the types of problems TAs find in student
-code. An easily accessible history of student code and TA feedback will provide
-insight into student progress and developed habits throughout the semester.
+code, allowing them to identify and address specific issues. An easily-accessible
+history of student code and TA feedback will provide insight into student 
+progress and developed habits throughout the semester.
 
 > **NOTE:** With the [GitHub Education plan (Free)](https://education.github.com/discount_requests/new), 
 > all student code will be hosted in private repos. Only TAs, professors,  and 

@@ -2,12 +2,16 @@
 import os
 
 # get student information to use with git config commands
-name = raw_input("Enter your name: ")
+first = raw_input("Enter your first name: ")
+last  = raw_input("Enter your last name: ")
 email = raw_input("Enter the email configured to your GitHub Account: ")
-username = raw_input("Enter your GitHub username: ")
 
 # the remote that points the students sandboxed repository
-submission_remote = "https://github.com/PomonaCS051/" + username + "_fa2015"
+# should be "https://github.com/PomonaCS051/cecil-sagehen_fa2015"
+submission_remote  = "https://github.com/PomonaCS051/"
+submission_remote += first.lower().strip() + "-" 
+submission_remote += last.lower().strip() 
+submission_remote += "_fa2015"
 
 # add and rename remotes for clarity when pushing and pulling
 os.system("git remote rename origin starter-code")
