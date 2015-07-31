@@ -238,7 +238,7 @@ Setting everthing up on Macs would be easy since the lab computer instructions w
 apply. On Windows machines, the setup would require a few more steps to get Git up
 and running. 
 
-#### Distracting Git
+#### *Git*-ing Distracted
 
 If not carefully explained in instructions, using Git in the workflow could distract from
 the CS051 curriculum. In an effort to avoid this and provide a level of abstraction between
