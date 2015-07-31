@@ -245,7 +245,7 @@ and running.
 
 If not carefully explained in instructions, using Git in the workflow could distract from
 the CS051 curriculum. In an effort to avoid this and provide a level of abstraction between
-Git and our use-case, we have written custom [aliases](configure_git.py) so students
+Git and our use-case, we have written custom [aliases](EGIT_USE.md#terminal-or-gui) so students
 don't have to spend time learning Git.
 
 ## Implementation Details
