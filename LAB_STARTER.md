@@ -17,21 +17,22 @@ Student Development Environment Setup
    5. Ensure the `master` branch is selected. Then click **Next >**.
 2. Copy the text in the *Directory* box. Paste it somewhere safe. Click **Next >**
 3. Ensure the box next to Lab01 is checked. Then click **Finish**
+   
     > If Lab01 does not automatically appear in the package explorer,
     > expand the working directory in the Git Repositories pane 
     > and right-click to select *Import...*. Then hit next to accept the
     > default options.
 4. Click the `Terminal` icon !["terminal"](/eclipse_images/tm_icon.png) in the top menu bar.
 5. Type `cd` + a space into the window that appears and copy the contents of
-   you copied and saved in step 2.  It should look something like below. 
+   you copied and saved in step 2.  It should look something like below:   
    ```
    cd /Users/cecilsagehen/git/fa2105
    ```  
    Hit return.  
    Then copy and paste the following:  
    ```
-   sudo ython configure_git.py  
-   ```
+   sudo python configure_git.py  
+   ```  
    Hit return.
    You will be prompted for your password.  Enter the password for the lab computer
    and hit return.
