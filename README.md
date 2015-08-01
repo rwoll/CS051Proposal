@@ -6,30 +6,37 @@ GitHub + Eclipse: A CS051 Proposal
 and [Eric C](mailto:eric.campbell@pomona.edu).*
 
 Additional reading and implementation details are linked throughout the document.
-To access these materials directly, browse the top level directory.
+To access these materials directly, browse the [resources](/resources) directory.
 * * *
 
 ## The Proposal
 
-Run an experimental CS051 Lab Section for Fall 2015, that uses
-GitHub and [EGit](http://www.eclipse.org/egit/?replytocom=14044) (a standard 
-Eclipse plugin) to optimize the lab **distribution-submission-feedback** cycle
-for students, TAs, and professors. 
+Trial an experimental lab workflow that uses GitHub and [EGit](http://www.eclipse.org/egit/?replytocom=14044)
+to optimize the lab **distribution-submission-feedback** (DSF) cycle for students,
+TAs, and professors in one CS051 Lab section.
 
-As an added benefit, the adoption of the proposed workflow would expose students
-to the basics of an industry standard versioning tool that promotes incremental
-and efficient programming and development.
+Git use in the CS051 lab cycle would improve student academic and career success by introducing them to the de facto industry-standard versioning tool; promote imcremental and efficent programming, ameliorating the quality of their code; enrich the academic interaction between students, TAs, and professors by allowing for peer-reviewed, clear, and concise feeback; and reduce overhead by streamlining the DSF cycle.
 
-A success in the implementation of the proposed workflow is defined by
-a decrease in overhead and an increase in the quality of grading and feedback.
+With the [GitHub Education plan (Free)](https://education.github.com/discount_requests/new), 
+all student code will be hosted in private repos. Only TAs, professors,  and 
+the student will have access to view/edit their repository.
+They will **NOT** be publicly visible nor will they be visible by other students.
+
+A success in this experiment is defined by a decrease in overhead, an increase
+in the quality of grading, and positive course evaluations. Upon success, we 
+envision rolling this out across all lab CS051 sections.
 
 ## Personal Motivation
 
 In our internships this summer, we learned the valuable, incremental
 version-controlled code-production pattern employed by software companies who 
-wish to produce code with low technical debt. We hope to leverage elements of
-these workflows to optimize the CS051 lab cycle and share a baseline
-knowledge of an invaluable and ubiquitous tool.
+wish to produce code with low technical debt.  Namely Git version-control.
+We hope to leverage elements of these workflows to optimize the CS051 lab cycle 
+and share a baseline knowledge of an invaluable and ubiquitous tool.
+
+Looking ahead, today's students will become tomorrow's TAs. Our goal is to create
+a sustainable low-maintaince coding environment built on a foundation of high-quality 
+collaboration between students, TAs, and professors.
 
 ## Overview: Why Consider GitHub?
 
@@ -47,13 +54,21 @@ optimized and reduced to **5** basic steps:
 | **TA**           | [GitHub Commenting][1]  | *allows TA to comment directly on specific lines of student code and leave valuable feedback that the professors can also review and easily add to* |
 
 > **NOTE:** All the student steps can be completed without leaving Eclipse.
-> The actions are possible due to git aliasing. See [this configuration file](configure_git.py)
-> for further information.
+> The actions are possible due to git aliasing. See the [explanation](/resources/EGIT_USE.md) or
+> [this configuration file](/resources/configure_git.py) for further information.
 
 From a TA or Professor's perspective, using GitHub could help **maximize the
 feedback students receive** on their code by reducing the number of steps
 in the grading process. It would simplify the collection of student projects
 and facilitate the dissemination of feedback.
+
+### Let us show you a quick demo
+
+The `.gif` below shows a compilation of all of the overhead that will go into
+the **distribution-submission-feedback** cycle for CS051.
+
+!["example_gif"](/resources/cs051.gif)
+
 
 ### Transparency
 
@@ -68,11 +83,6 @@ Professors will have a clear view into the types of problems TAs find in student
 code, allowing them to identify and address specific issues. An easily-accessible
 history of student code and TA feedback will provide insight into student 
 progress and developed habits throughout the semester.
-
-> **NOTE:** With the [GitHub Education plan (Free)](https://education.github.com/discount_requests/new), 
-> all student code will be hosted in private repos. Only TAs, professors,  and 
-> the student will have access to view/edit their repository.
-> They will **NOT** be publicly visible nor will they be visible by other students.
 
 ### Dynamic Lab Materials
 
@@ -91,18 +101,18 @@ enhance the CS051 distribution-submission-feedback cycle.
 
 ## *Git*-ing Into It: How Would this Work?
 
-At the begining of the semester, the TAs would [setup private, sandboxed repositories](SANDBOXING.md)
+At the begining of the semester, the TAs would [setup private, sandboxed repositories](/resources/SANDBOXING.md)
 for each student to which students would push their completed assignments. [Eclipse would
-be configured with EGit](EGIT_USE.md), so **students can complete the entire process without leaving the
+be configured with EGit](/resources/EGIT_USE.md), so **students can complete the entire process without leaving the
 IDE.**
 
 At the start of the first lab, students would have to follow something similar to
-our [sample guide](LAB_STARTER.md) to get everything up and running.
+our [sample guide](/resources/LAB_STARTER.md) to get everything up and running.
 After the initial setup, there are very few steps involved.
 
 ### General Architecture: The Repositories
 
-![ArchitectureImage](architecture_v.png)
+![ArchitectureImage](/resources/architecture_v.png)
 
 1. **Starter Code Repository** (GitHub): Professors would push new lab assignments to this
    repository that will be pull-only for students. This will end up becoming a
@@ -112,10 +122,10 @@ After the initial setup, there are very few steps involved.
 2. **Student Working Repositories** (Local): Each student will have a repository that
    contains their work on the assignments. This will be configured with Eclipse's
    EGit plugin to make the pushing and pulling updates out of Eclipse seamless.
-   With a specifically designed remote scheme, this repository will be able
+   With a specifically designed remote scheme inspired by [this schools setup](https://joshldavis.com/2014/06/30/github-university-follow-up/), this repository will be able
    to easily pull in updates and new assignments from the Starter Code Repository.
-   At the start of the semester students will follow [instructions](LAB_STARTER.md) to setup this
-   repository and configure it with [this handy script](configure_git.py).
+   At the start of the semester students will follow [instructions](/resources/LAB_STARTER.md) to setup this
+   repository and configure it with [this handy script](/resources/configure_git.py).
 3. **Submission Repositories** (GitHub): These repositories are GitHub hosted duplicates*
    of the student working repositories. Each student will have a private, sandboxed
    repository. Since they are hosted on GitHub, students, TAs, and professors
@@ -127,7 +137,7 @@ After the initial setup, there are very few steps involved.
    the need to drag-and-drop source code.
    With one command they will be able to pull an entire lab sections submissions!
 
-For more details on the inner workings of this architecture design, [view this section](ARCHITECTURE.md).
+For more details on the inner workings of this architecture design, [view this section](/resources/ARCHITECTURE.md).
 
 ## EGit
 
@@ -135,7 +145,7 @@ EGit is an Eclipse Git plug-in that allows for the easy integration of a Git wor
 the IDE and adds a GUI. It ships with the newer releases of [Eclipse](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/marsr)
 
 With EGit, you can `ctrl`-click and import a single project or an entire repository
-filled with multiple projects into Eclipse's standard Package Explorer
+filled with multiple projects into Eclipse's standard Package Explorer.
 Visual aids will also appear in the Package Explorer to depict a clear picture of
 the Git status of each project asset.
 
@@ -143,7 +153,7 @@ When it's time to commit changes and push them to the grading repository, EGit p
 a simple dialog box to confirm which files are being added and to include a simple commit
 message.
 
-For more on the configuration of EGit in the proposed design, [view this section](EGIT_USE.md).
+For more on the configuration of EGit in the proposed design, [view this section](/resources/EGIT_USE.md).
 
 ## Adaptations: Working with the Existent Assignments
 
@@ -153,7 +163,7 @@ workspaces and complete. The write-ups would be modified slightly to include ins
 that specify the Git related actions; these write-ups can be left in Html or rewritten
 as Markdown for which GitHub has sleek rendering.
 
-For more information on modifying the existing code base, view [this document](IMPLEMENTATION.md#modifications-to-existing-codebase).
+For more information on modifying the existing code base, view [this document](/resources/IMPLEMENTATION.md#modifications-to-existing-codebase).
 
 ## Case Studies
 
@@ -246,12 +256,12 @@ and running.
 
 If not carefully explained in instructions, using Git in the workflow could distract from
 the CS051 curriculum. In an effort to avoid this and provide a level of abstraction between
-Git and our use-case, we have written custom [aliases](EGIT_USE.md#terminal-or-gui) so students
+Git and our use-case, we have written custom [aliases](/resources/EGIT_USE.md#terminal-or-gui) so students
 don't have to spend time learning Git.
 
 #### Where's My Code?
 
-Student's may forget to push code to GitHub for grading and leave it local. To mitigate this,
+Students may forget to push code to GitHub for grading and leave it local. To mitigate this,
 students would be instructed to log on to GitHub after they have submitted an assignment to
 ensure that it is all there. If they have an issue, they can open an issue right from GitHub
 and tag the grading team to have them be notified and take a look.
@@ -260,16 +270,16 @@ and tag the grading team to have them be notified and take a look.
 
 This section contains links to tested scripts and documents that we have compiled
 to explain all the details of implementation.
-+ [Architecure Details](ARCHITECTURE.md)
-+ [EGit Use](EGIT_USE.md)
-+ [Sandboxing with `teachers_pet`](SANDBOXING.md)
-+ [Student Lab Configuration](LAB_STARTER.md)
-+ [Repository Remote and Alias Configuration Script](configure_git.py)
-+ [Screenshots](SCREENSHOTS.md)
++ [Architecure Details](/resources/ARCHITECTURE.md)
++ [EGit Use](/resources/EGIT_USE.md)
++ [Sandboxing with `teachers_pet`](/resources/SANDBOXING.md)
++ [Student Lab Configuration](/resources/LAB_STARTER.md)
++ [Repository Remote and Alias Configuration Script](/resources/configure_git.py)
++ [Screenshots](/resources/SCREENSHOTS.md)
 
 ## The Good, the Bad, and the Merge Conflict
-+ [Pros and Cons Comparison](PROS_CONS.md)
-+ [Current vs. Proposaed Workflow Comparison](IMPLEMENTATION.md#proposed-workflow)
++ [Pros and Cons Comparison](/resources/PROS_CONS.md)
++ [Current vs. Proposaed Workflow Comparison](/resources/IMPLEMENTATION.md#proposed-workflow)
 
 ## *Git*-ing It Ready: Necessary Steps
 
