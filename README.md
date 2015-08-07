@@ -15,7 +15,7 @@ Trial an experimental lab workflow that uses GitHub and [EGit](http://www.eclips
 to optimize the lab **distribution-submission-feedback** (DSF) cycle for students,
 TAs, and professors in one CS051 Lab section.
 
-Git use in the CS051 lab cycle would improve student academic and career success by introducing them to the de facto industry-standard versioning tool; promote imcremental and efficent programming, ameliorating the quality of their code; enrich the academic interaction between students, TAs, and professors by allowing for peer-reviewed, clear, and concise feeback; and reduce overhead by streamlining the DSF cycle.
+Git use in the CS051 lab cycle would improve student academic and career success by introducing them to the de facto industry-standard versioning tool; promote incremental and efficent programming, ameliorating the quality of their code; enrich the academic interaction between students, TAs, and professors by allowing for peer-reviewed, clear, and concise feeback; and reduce overhead by streamlining the DSF cycle.
 
 With the [GitHub Education plan (Free)](https://education.github.com/discount_requests/new), 
 all student code will be hosted in private repos. Only TAs, professors,  and 
@@ -48,7 +48,7 @@ optimized and reduced to **5** basic steps:
 | Who              | Action                  | Description                   |
 |:----------------:|:-----------------------:|:------------------------------|
 | **Professor**    | `publish_lab lab47`     | *makes lab 47 available to all students* |
-| **Student**      | `git starterCode && git newLab lab47`| *brings the latest assignment and starter code into the students Eclipse environment and creates a branch for their work*|
+| **Student**      | `git starterCode && git newLab lab47`| *brings the latest assignment and starter code into the student's Eclipse environment and creates a branch for their work*|
 | **Student**      | `git submit lab47`      | *pushes the student's work to GitHub for the TA to evaluate* |
 | **TA**           | `get_student_code`      | *pulls an entire section's latest submissions from GitHub into the Eclipse environment* |
 | **TA**           | [GitHub Commenting][1]  | *allows TA to comment directly on specific lines of student code and leave valuable feedback that the professors can also review and easily add to* |
