@@ -22,10 +22,10 @@ the `origin` remote is desired destination repository.
 publish_lab () {
     if [ -z $1  ]
     then
-        echo “Parameter is of zero length”
+        echo "Parameter is of zero length"
     else
         git add $1
-        git commit -m “publish $1”
+        git commit -m "publish $1"
         git push origin master
     fi
     return 0
